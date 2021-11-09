@@ -1,0 +1,28 @@
+.servicios{
+    margin-top: 3rem;
+    margin-left: 33%;
+    margin-right: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.ventas{
+    margin-top: 50px;
+    width: 265px;
+    height: 318.69px;
+}
+.servicios-card{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.separador{
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(90deg, #E69419 0%, #E69419 100%);
+    border-radius: 2px;
+    position: relative;
+}

@@ -1,0 +1,13 @@
+.Pagos{
+    margin: 8px 5px;
+    display: flex;
+}
+.envios{
+    margin: 3px;
+}
+.tarjetas{
+    margin: 3px;
+}
+.ahora{
+    margin: 3px;
+}

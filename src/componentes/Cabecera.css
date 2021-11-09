@@ -1,0 +1,22 @@
+.Cabeceras{
+    margin: auto 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.ubicacion{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.contactos{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    vertical-align: baseline;
+}
+ul{
+    list-style: none;
+}

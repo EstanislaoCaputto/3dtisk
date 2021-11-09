@@ -1,0 +1,11 @@
+.elCarruFoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgFilamento{
+    display: flex;
+    justify-content: center;
+    margin: 2px 5px;
+}

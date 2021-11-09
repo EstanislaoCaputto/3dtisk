@@ -1,0 +1,8 @@
+.barraNavegacion{
+    display: flex;
+    justify-content: space-around;
+    background-color: #dd9933;
+}
+.container{
+    justify-content: space-between!important;
+}
