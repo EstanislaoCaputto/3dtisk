@@ -1,4 +1,4 @@
-import {Carousel} from 'react-bootstrap'
+import {Carousel, Image} from 'react-bootstrap'
 import './carruselDeFotos.css'
 import filamento3D from './img/Ecofila-Naranja-1080x450-1-1024x427.jpg'
 
@@ -7,10 +7,11 @@ function CarruselDeFotos() {
         <div className='elCarruFoto'>
             <Carousel>
                 <Carousel.Item>
-                    <img
+                    <Image
                         className="imgFilamento"
                         src={filamento3D}
                         alt="filamento"
+                        fluid
                     />
                     <Carousel.Caption>
                         <h3>First slide label</h3>
@@ -18,10 +19,11 @@ function CarruselDeFotos() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img
+                    <Image
                         className="imgFilamento"
                         src={filamento3D}
                         alt="Second slide"
+                        fluid
                     />
 
                     <Carousel.Caption>
@@ -30,10 +32,11 @@ function CarruselDeFotos() {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img
+                    <Image
                         className="imgFilamento"
                         src={filamento3D}
                         alt="Third slide"
+                        fluid
                     />
 
                     <Carousel.Caption>

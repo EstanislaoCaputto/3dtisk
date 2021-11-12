@@ -4,7 +4,8 @@ import NavBar from './componentes/NavBar'
 import Servicios from './componentes/Servicios';
 import Home from './componentes/Home';
 import Contactar from './componentes/Contactenos';
-
+import Footer from './componentes/Footer';
+import './app.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/servicioTecnico" element={<Servicios />} />
           <Route exact path="/contactenos" element={<Contactar/>}/>
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
