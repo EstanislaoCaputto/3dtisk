@@ -8,6 +8,7 @@ function Home() {
             <CarruselDeFotos/>
             <div className="separador"></div>
             <Pagos/>
+            <div className="separador"></div>
         </>
     )
 }

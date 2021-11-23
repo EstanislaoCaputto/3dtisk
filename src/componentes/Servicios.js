@@ -76,7 +76,9 @@ function Servicios() {
                 </div>
             </div>
             <h4>Si necesitas un servicio personalizado, comunicate con nosotros.</h4>
+            <a href='/contactenos'>
             <Button className='Botton'variant='warning'>Contactanos</Button>
+            </a>
         </div>
     )
 }

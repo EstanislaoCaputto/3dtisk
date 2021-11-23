@@ -7,6 +7,7 @@ import Contactar from './componentes/Contactenos';
 import Footer from './componentes/Footer';
 import './app.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import ItemList from './componentes/itemList'
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/servicioTecnico" element={<Servicios />} />
           <Route exact path="/contactenos" element={<Contactar/>}/>
+          <Route exact path="/tienda" element={<ItemList/>}/>
         </Routes>
         <Footer />
       </div>
