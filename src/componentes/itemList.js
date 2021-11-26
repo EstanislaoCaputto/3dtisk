@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Spinner } from 'react-bootstrap';
+import fs from 'fs'
 //import producto from '../../public/DATABASE.txt'
 import { collection, getDocs } from 'firebase/firestore';
 import {getData} from '../firebase';
@@ -12,18 +13,32 @@ export default function ItemList() {
     const [productos, setProductos] = useState([]);
 
     useEffect(()=>{
-        const getProductos = async () => {
-            const prodCollection = collection(getData(), 'productos');
-            const prodSnapshot = await getDocs(prodCollection);
+        
+            // const getProductos = async () => {
 
-            const prodList = prodSnapshot.docs.map( doc => ({
-                id: doc.id,
-                ...doc.data()
-            }));
-            setProductos(prodList)
-            setCargar(false)
-        }
-        getProductos()
+            //     let data = await fs.promises.readFile('./data.txt', 'utf-8')
+            //     let prod = JSON.parse(data)
+            //     setProductos(prod)
+            //     setCargar(false)
+
+            // }
+            // getProductos();
+        
+            
+            const getProductos = async () => {
+                const prodCollection = collection(getData(), 'productos');
+                const prodSnapshot = await getDocs(prodCollection);
+    
+                const prodList = prodSnapshot.docs.map( doc => ({
+                    id: doc.id,
+                    ...doc.data()
+                }));
+                setProductos(prodList)
+                setCargar(false)
+            }
+            getProductos()
+            
+       
     },[])
 
 

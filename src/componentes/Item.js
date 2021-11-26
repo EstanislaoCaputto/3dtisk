@@ -4,7 +4,7 @@ import './Item.css'
 
 
 
-export default function Item({titulo, precio, tipo, marca, garantia, dimensiones,descripcion, stock, codigo, imagen }) {
+export default function Item({titulo, precio, tipo, marca, garantia, dimensiones,descripicion, stock, codigo, imagen }) {
     
     return(
         <>
@@ -22,6 +22,8 @@ export default function Item({titulo, precio, tipo, marca, garantia, dimensiones
                         <li><p>Codigo {codigo}</p></li>
                     </ul>
                     <span>Disponibilidad {stock}</span>
+                    <h3>Descripcion:</h3>
+                    <p>{descripicion}</p>
                 </div>
             </div>
         </>
