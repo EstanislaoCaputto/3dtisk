@@ -10,9 +10,10 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <NavDropdown title='Tienda' id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/">Impresoras FDM</NavDropdown.Item>
-                            <NavDropdown.Item href="/">Impresoras de Resina</NavDropdown.Item>
+                        <NavDropdown title='Tienda' id="basic-nav-dropdown" menuVariant='dark'>
+                            <NavDropdown.Item href="/tienda">Impresoras FDM</NavDropdown.Item>
+                            <NavDropdown.Item href="/tienda">Impresoras de Resina</NavDropdown.Item>
+                            <NavDropdown.Item href="/tienda">Componentes</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="/servicioTecnico">Soporte Técnico</Nav.Link>
                         <Nav.Link href="/contactenos">Contáctenos</Nav.Link>

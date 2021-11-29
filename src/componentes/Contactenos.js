@@ -22,21 +22,22 @@ function Contactar() {
                 >
                     <Form>
                         <label htmlFor="firstName">First Name</label>
-                        <Field id="firstName" name="firstName" placeholder="Jane" />
+                        <Field id="firstName" name="firstName" placeholder="Juanse" />
 
                         <label htmlFor="lastName">Last Name</label>
-                        <Field id="lastName" name="lastName" placeholder="Doe" />
+                        <Field id="lastName" name="lastName" placeholder="Alekian" />
 
                         <label htmlFor="email">Email</label>
                         <Field
                             id="email"
                             name="email"
-                            placeholder="jane@acme.com"
+                            placeholder="juanse@mail.com"
                             type="email"
                         />
                         <button type="submit">Submit</button>
                     </Form>
                 </Formik>
+                {/* https://www.creativosonline.org/formularios-css-html.html */}
             </div>
             <h1 className='titu'>CONTACTANOS</h1>
             <p>Presione el icono de la red por la que prefiere comunicarse</p>

@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Spinner } from 'react-bootstrap';
-import fs from 'fs'
 //import producto from '../../public/DATABASE.txt'
 import { collection, getDocs } from 'firebase/firestore';
 import {getData} from '../firebase';
