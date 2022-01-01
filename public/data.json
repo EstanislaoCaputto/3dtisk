@@ -6,7 +6,7 @@
     "marca":"Hellbot",
     "garantia":"6 Meses",
     "dimension":"220x220x260mm",
-    "descripicion":" ",
+    "descripcion":" ",
     "stock":"Si",
     "codigo":"H001"
     },
@@ -17,7 +17,7 @@
     "marca":"Creality",
     "garantia":"6 Meses",
     "dimension":"220x220x250mm",
-    "descripicion":" ",
+    "descripcion":" ",
     "stock":"No",
     "codigo":"C001"
     },
@@ -28,7 +28,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"220x220x250mm",
-        "descripicion":"",
+        "descripcion":"",
         "stock":"Si",
         "codigo":"C002"
     },
@@ -39,7 +39,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"220x220x250mm",
-        "descripicion":"",
+        "descripcion":"",
         "stock":"Si",
         "codigo":"C003"
     },
@@ -50,7 +50,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"300x300x340mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"C004"
     },
@@ -61,7 +61,7 @@
         "marca":"Hellbot",
         "garantia":"1 Año",
         "dimension":"230x230x250mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"H002" 
     },
@@ -72,7 +72,7 @@
         "marca":"Hellbot",
         "garantia":"1 Año",
         "dimension":"300x300x400mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"H003"
     },
@@ -83,7 +83,7 @@
         "marca":"Hellbot",
         "garantia":"1 Año",
         "dimension":"400x400x400mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"H004"
     },
@@ -94,7 +94,7 @@
         "marca":"Hellbot",
         "garantia":"1 Año",
         "dimension":"500x500x500mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"H005"
     },
@@ -105,7 +105,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"220x220x300mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"C005"
     },
@@ -116,7 +116,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"350x350x400mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"C006"
     },
@@ -127,7 +127,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"235x235x250mm",
-        "descripicion":"",
+        "descripcion":"",
         "stock":"Si",
         "codigo":"C007"
     },
@@ -138,7 +138,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"200x200x200mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"C008"
     },
@@ -149,7 +149,7 @@
         "marca":"Hellbot",
         "garantia":"1 Año",
         "dimension":"220x220x250mm",
-        "descripicion":"",
+        "descripcion":"",
         "stock":"No",
         "codigo":"H006"
     },
@@ -160,7 +160,7 @@
         "marca":"Hellbot",
         "garantia":"1 Año",
         "dimension":"300x300x350mm",
-        "descripicion":"",
+        "descripcion":"",
         "stock":"No",
         "codigo":"H007"
     },
@@ -171,7 +171,7 @@
         "marca":"Artillery",
         "garantia":"6 Meses",
         "dimension":"230x230x250mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"A001"
     },
@@ -182,7 +182,7 @@
         "marca":"Artillery",
         "garantia":"6 Meses",
         "dimension":"300x300x400mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"No",
         "codigo":"A002"
     },
@@ -193,7 +193,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"300x300x400mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"C009"
     },
@@ -204,7 +204,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"300x300x400mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"No",
         "codigo":"C010"
     },
@@ -215,7 +215,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"300x300x400mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"No",
         "codigo":"C011"
     },
@@ -226,7 +226,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"450X450X470mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"C012"
     },
@@ -237,7 +237,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"250x250x400mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"No",
         "codigo":"C013"
     },
@@ -248,7 +248,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"250x250x300mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"No",
         "codigo":"C014"
     },
@@ -259,7 +259,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"400x400x400mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"C015"
     },
@@ -270,7 +270,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"200x170xINFmm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"C016"
     },
@@ -281,7 +281,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"300x225x380mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"C017"
     },
@@ -292,7 +292,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"170x120mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"No",
         "codigo":"CR001"
     },
@@ -303,7 +303,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"240x160mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"No",
         "codigo":"CR002"
     },
@@ -314,7 +314,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"119x65x160mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"CR003"
     },
@@ -325,7 +325,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"130x82x160mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"CR004"
     },
@@ -336,7 +336,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"130x82x160mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"CR005"
     },
@@ -347,7 +347,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"192x120x250mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"CR006"
     },
@@ -358,7 +358,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"192x120x200mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"CR007"
     },
@@ -369,7 +369,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":"288x162x300mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"No",
         "codigo":"CR008"
     },
@@ -380,7 +380,7 @@
         "marca":"Hellbot",
         "garantia":"6 Meses",
         "dimension":"140x78x200mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"HR001"
     },
@@ -391,7 +391,7 @@
         "marca":"Creality",
         "garantia":"6 Meses",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"No",
         "codigo":"SC001"
     },
@@ -402,7 +402,7 @@
         "marca":"Hellbot",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IH001"
     },
@@ -413,7 +413,7 @@
         "marca":"Creality",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IC001"
     },
@@ -424,7 +424,7 @@
         "marca":"Creality",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IC002"
     },
@@ -435,7 +435,7 @@
         "marca":"Hellbot",
         "garantia":" ",
         "dimension":"",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IH002"
     },
@@ -446,7 +446,7 @@
         "marca":"Hellbot",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IH003"
     },
@@ -457,7 +457,7 @@
         "marca":"Hellbot",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IH004"
     },
@@ -468,7 +468,7 @@
         "marca":"Hellbot",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IH005"
     },
@@ -479,7 +479,7 @@
         "marca":"Printalot",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IP001"
     },
@@ -490,7 +490,7 @@
         "marca":"Printalot",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IP002"
     },
@@ -501,7 +501,7 @@
         "marca":"Printalot",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IP003"
     },
@@ -512,7 +512,7 @@
         "marca":"Printalot",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IP004"
     },
@@ -523,7 +523,7 @@
         "marca":"Biqu",
         "garantia":"6 Meses",
         "dimension":"235x235x270mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"No",
         "codigo":"B001"
     },
@@ -534,7 +534,7 @@
         "marca":"Biqu",
         "garantia":"6 Meses",
         "dimension":"235x235x270mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"B002"
     },
@@ -545,7 +545,7 @@
         "marca":"Trimaker",
         "garantia":"1 Año",
         "dimension":"230x230x260mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"No",
         "codigo":"T001"
     },
@@ -556,7 +556,7 @@
         "marca":"Trimaker",
         "garantia":"1 Año",
         "dimension":"230x230x260mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"No",
         "codigo":"T002"
     },
@@ -567,7 +567,7 @@
         "marca":"Trimaker",
         "garantia":"1 Año",
         "dimension":"200x200x200mm",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"No",
         "codigo":"T003"
     },
@@ -578,7 +578,7 @@
         "marca":"Grilon3",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"si",
         "codigo":"IG001"
     },
@@ -589,7 +589,7 @@
         "marca":"Grilon3",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IG002"
     },
@@ -600,7 +600,7 @@
         "marca":"Grilon3",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"si",
         "codigo":"IG003"
     },
@@ -611,7 +611,7 @@
         "marca":"Grilon3",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IG004"
     },
@@ -622,7 +622,7 @@
         "marca":"Grilon3",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"SI",
         "codigo":"IG005"
     },
@@ -633,7 +633,7 @@
         "marca":"Grilon3",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IG006"
     },
@@ -644,7 +644,7 @@
         "marca":"Grilon3",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"si",
         "codigo":"IG007"
     },
@@ -655,7 +655,7 @@
         "marca":"Grilon3",
         "garantia":" ",
         "dimension":" ",
-        "descripicion":" ",
+        "descripcion":" ",
         "stock":"Si",
         "codigo":"IG008"
     }

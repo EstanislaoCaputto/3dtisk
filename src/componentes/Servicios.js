@@ -60,19 +60,19 @@ function Servicios() {
             <div className='servicios-videos'>
                 <div className='videos'>
                     <h3>Nivelacion de cama con Level Corners</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/G-hI0CtsJfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/G-hI0CtsJfA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <div className='videos'>
                     <h3>Cambio de teflón</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mWLbOOqrFpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mWLbOOqrFpE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <div className='videos'>
                     <h3>Destapar pico extrusor</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/u2Y2f-0NI0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/u2Y2f-0NI0Q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <div className='videos'>
                     <h3>Calibración de drivers de steppers</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6yRG4gYxFvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6yRG4gYxFvM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </div>
             <h4>Si necesitas un servicio personalizado, comunicate con nosotros.</h4>

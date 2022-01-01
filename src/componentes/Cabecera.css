@@ -1,22 +1,75 @@
 .Cabeceras{
     margin: auto 5px;
+    height: 150px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+    text-align: center;
 }
 .ubicacion{
     display: flex;
-    align-content: center;
     align-items: center;
+    justify-content: center;
 }
 
+.locales li{
+    display: flex;
+    list-style: none;
+    justify-content: center!important;
+    align-items: stretch!important;
+}
+.locales li::before {
+    content: '';
+    display: inline-block;
+    height: 2.5em;
+    width: 2.5em;
+    background-image: url('./img/png-transparent-computer-icons-google-maps-location-map-angle-text-triangle.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 .contactos{
     display: flex;
-    align-content: center;
     align-items: center;
-    vertical-align: baseline;
+    justify-content: space-around;
+    text-align: start;
 }
-ul{
+.contact{
+    display: flex;
+    flex-direction: column;
     list-style: none;
+}
+.contact-fijo::before{
+    content: '';
+    display: inline-block;
+    height: 1.8em;
+    width: 1.8em;
+    background-image: url('./img/92419471-vector-negro-de-señal-del-receptor-del-teléfono-.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.contact-cel::before{
+    content: '';
+    display: inline-block;
+    height: 2em;
+    width: 2em;
+    justify-content: center!important;
+    background-image: url('./img/whatsapp.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.contact-mail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 7px;
+}
+.contact-mail::before{
+    content: '';
+    display: inline-block;
+    height: 1.8em;
+    width: 1.8em;
+    background-image: url('./img/1024px-Aiga_mail.svg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }

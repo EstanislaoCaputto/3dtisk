@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Spinner } from 'react-bootstrap';
-//import producto from '../../public/DATABASE.txt'
-import { collection, getDocs } from 'firebase/firestore';
-import {getData} from '../firebase';
 import Item from './Item';
 
 
@@ -13,29 +10,38 @@ export default function ItemList() {
 
     useEffect(()=>{
         
-            // const getProductos = async () => {
+            const getProductos = async () => {
+                fetch('http://localhost:8080/api/productos',{
+                    method:'GET'
+                }).then(resultado=>{
+                    return resultado.json()
+                }).then(json=>{
+                    console.log(json);
+                    setProductos(json.payload)
+                }).catch(err=>{
+                    console.log('Hubo un error', err);
+                })
+                // let data = await fs.promises.readFile('./data.txt', 'utf-8')
+                // let prod = JSON.parse(data)
+                // setProductos(prod)
+                setCargar(false)
 
-            //     let data = await fs.promises.readFile('./data.txt', 'utf-8')
-            //     let prod = JSON.parse(data)
-            //     setProductos(prod)
-            //     setCargar(false)
-
-            // }
-            // getProductos();
+            }
+            getProductos();
         
             
-            const getProductos = async () => {
-                const prodCollection = collection(getData(), 'productos');
-                const prodSnapshot = await getDocs(prodCollection);
+            // const getProductos = async () => {
+            //     const prodCollection = collection(getData(), 'productos');
+            //     const prodSnapshot = await getDocs(prodCollection);
     
-                const prodList = prodSnapshot.docs.map( doc => ({
-                    id: doc.id,
-                    ...doc.data()
-                }));
-                setProductos(prodList)
-                setCargar(false)
-            }
-            getProductos()
+            //     const prodList = prodSnapshot.docs.map( doc => ({
+            //         id: doc.id,
+            //         ...doc.data()
+            //     }));
+            //     setProductos(prodList)
+            //     setCargar(false)
+            // }
+            // getProductos()
             
        
     },[])

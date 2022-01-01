@@ -8,25 +8,21 @@ function Cabecera() {
             <img src={logo} alt="Logo"></img>
             </div>
             <div className='ubicacion'>
-            <ul>
-                <li>
-                    Local 31 | Hiper Libertad Rodriguez del Busto | Ciudad de Córdoba
-                </li>
-                <li>
-                    Oficina | Italia 1963 PB Oficina | B° Villa Cabrera | Ciudad de Córdoba
-                </li>
+            <ul className='locales'>
+                <li>Local 31 | Hiper Libertad Rodriguez del Busto | Ciudad de Córdoba</li>
+                <li>Oficina | Italia 1963 PB Oficina | B° Villa Cabrera | Ciudad de Córdoba</li>
             </ul>
             </div>
             <div className='contactos'>
-            <ul>
-                <li>
-                    <> +54 9 3515524118</>
+            <ul className='contact'>
+                <li className='contact-cel'>
+                    +54 9 3513499824
                 </li>
-                <li>
-                    <>+54 9 3513499824 </>
+                <li className='contact-fijo'>
+                    +54 9 3515524118
                 </li>
-                <li>
-                    <>3dtisk.cba@gmail.com </>
+                <li className='contact-mail'>
+                    3dtisk.cba@gmail.com
                 </li>
             </ul>
             </div>

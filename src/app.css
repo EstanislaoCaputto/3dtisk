@@ -1,4 +1,29 @@
 @font-face {
     font-family: Sisco;
     src: url('./fonts/Tipopepel\ -\ Sisco.otf');
-  }
+}
+.App::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.App::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+.App::-webkit-scrollbar-button:increment,.App::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.App::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.App::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.App::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
