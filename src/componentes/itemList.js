@@ -10,17 +10,27 @@ export default function ItemList() {
 
     useEffect(()=>{
         
-            const getProductos = async () => {
-                fetch('http://localhost:8080/api/productos',{
+            const getProductos = async () => { //https://3dtisk.com.ar/producto/impresora-fdm-trimaker-nebula-230-x-230-x-260mm/
+                let response = await fetch('https://3dtisk.com.ar/wp-json/wc/store/products',{
                     method:'GET'
-                }).then(resultado=>{
-                    return resultado.json()
-                }).then(json=>{
-                    console.log(json);
-                    setProductos(json.payload)
-                }).catch(err=>{
-                    console.log('Hubo un error', err);
                 })
+                if(!response.ok) {
+                    // oups! something went wrong
+                    return;
+                }
+                const posts = await response.json();
+                setProductos(posts)
+                console.log(posts);
+                // fetch('http://localhost:8080/api/productos',{
+                //     method:'GET'
+                // }).then(resultado=>{
+                //     return resultado.json()
+                // }).then(json=>{
+                //     console.log(json);
+                //     setProductos(json.payload)
+                // }).catch(err=>{
+                //     console.log('Hubo un error', err);
+                // })
                 // let data = await fs.promises.readFile('./data.txt', 'utf-8')
                 // let prod = JSON.parse(data)
                 // setProductos(prod)

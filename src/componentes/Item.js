@@ -4,33 +4,31 @@ import './Item.css'
 
 
 
-export default function Item({titulo, precio, tipo, marca, garantia, dimensiones,descripcion, stock, codigo, imagen }) {
+export default function Item({name, prices, type, categories, description, images }) {
     
     return(
         <>
             <div className="container-productos">
-                <Image className="imgProd" src={imagen} rounded fluid/>
+                <Image className="imgProd" src={images[0].src} rounded fluid/>
                 <div className="contProd col-6">
                     <div className="contInfo">
-                        <h2>{titulo}</h2>
-                        <h4>{dimensiones}</h4>
-                        <span>${precio}</span>
+                        <h2>{name}</h2>
+                        <span>${prices.price}</span>
                         <ul>
-                            <li><p>Tipo: {tipo}</p></li>
-                            <li><p>Marca: {marca}</p></li>
-                            <li><p>Garantia: {garantia}</p></li>
-
-                            <li><p>Codigo {codigo}</p></li>
+                            <li><p>Tipo: {type}</p></li>
+                            <li><p>Marca: {categories[0].name}</p></li>
+                            
                         </ul>
-                        <span>Disponibilidad {stock}</span>
                     </div>
                     <div className="contDesc">
                         <h3>Descripcion:</h3>
-                        <p>{descripcion}</p>
+                        <div id='desc'>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="divisor"></div>
+            
         </>
     )
 }
