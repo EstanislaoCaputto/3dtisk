@@ -72,11 +72,13 @@ export default function ItemList() {
     return(
         
         <>
-            
-            {productos.map((elProd)=>(
-                <Item key={elProd.id} {...elProd}/>
-            ))}
-            
+            <div className='lista'>
+
+                {productos.map((elProd) => (
+                    <Item key={elProd.id} {...elProd} />
+                ))}
+
+            </div>
         </>
     )
 };
