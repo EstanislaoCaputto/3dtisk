@@ -1,8 +1,8 @@
 .lista{
     display:flex;
     flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: baseline;
+    align-items: center;
+    justify-content: center;
 
 }
 .container-productos {
