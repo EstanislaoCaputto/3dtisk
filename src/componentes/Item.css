@@ -64,3 +64,11 @@ ul{
     margin: 5px 5px;
 
 }
+@media screen and (max-width: 800px){ 
+    .lista{
+        flex-direction: column;
+    }
+    .container-productos{
+        max-width: 50%;
+    }
+}
