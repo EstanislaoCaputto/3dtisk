@@ -1,6 +1,7 @@
-import CarruselDeFotos from "./CarruselDeFotos";
-import Pagos from "./Pagos";
+import CarruselDeFotos from "./CarruselDeFotos.js";
+import Pagos from "./Pagos.js";
 import './home.css'
+import ItemList from "./itemList.js";
 
 function Home() {
     return(
@@ -8,6 +9,8 @@ function Home() {
             <CarruselDeFotos/>
             <div className="separador"></div>
             <Pagos/>
+            <div className="separador"></div>
+            <ItemList/>
             <div className="separador"></div>
         </>
     )
