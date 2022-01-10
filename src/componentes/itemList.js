@@ -11,7 +11,7 @@ export default function ItemList() {
     useEffect(()=>{
         
             const getProductos = async () => {
-                let response = await fetch('https://3dtisk.com.ar/wp-json/wc/store/products',{
+                let response = await fetch('http://localhost:8080/api/productos',{
                     method:'GET'
                 })
                 if(!response.ok) {
@@ -19,7 +19,7 @@ export default function ItemList() {
                     return;
                 }
                 const posts = await response.json();
-                setProductos(posts)
+                setProductos(posts.payload)
                 console.log(posts);
                 
                 setCargar(false)
@@ -63,7 +63,7 @@ export default function ItemList() {
             <div className='lista'>
 
                 {productos.map((elProd) => (
-                    <Item key={elProd.id} {...elProd} />
+                    <Item key={elProd.id-productos} {...elProd} />
                 ))}
 
             </div>

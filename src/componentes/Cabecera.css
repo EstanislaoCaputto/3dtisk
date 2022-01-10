@@ -1,6 +1,7 @@
 .Cabeceras{
     margin: auto 5px;
-    height: 150px;
+    min-width: 550px;
+    max-height: 150px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -72,4 +73,10 @@
     background-image: url('./img/1024px-Aiga_mail.svg.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-with: 556px){
+    .Cabeceras{
+        display: none!important;
+    }
 }

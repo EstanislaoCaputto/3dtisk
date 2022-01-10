@@ -17,10 +17,22 @@
     text-align: center;
     font-size: 26px;
 }
-.imgProd{
-    min-width: 25%;
+.container-info{
+    display: flex;
+    flex-direction: column;
+    max-height: 174px;
+    align-items: center;
 }
-
+.imgProd{
+    max-width: 390px;
+    max-height: 390px;
+    border-radius: 5%;
+}
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* .contDesc{
     min-width: 350px;
