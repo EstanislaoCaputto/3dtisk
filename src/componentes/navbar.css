@@ -1,9 +1,15 @@
 .barraNavegacion{
     display: flex;
+    width: 100%;
     justify-content: space-around;
+    align-items: baseline;
     background-color: #dd9933;
     color: black;
 }
-.container{
-    justify-content: space-between!important;
+
+
+
+@media screen and (max-width:560px) {
+    .barraNavegacion{}
+    
 }

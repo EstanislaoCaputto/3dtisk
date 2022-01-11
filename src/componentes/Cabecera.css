@@ -75,8 +75,8 @@
     background-repeat: no-repeat;
 }
 
-@media screen and (max-with: 556px){
+@media screen and (max-width: 556px){
     .Cabeceras{
-        display: none!important;
+        display: none;
     }
 }

@@ -8,6 +8,7 @@ import Footer from './componentes/Footer';
 import './app.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import ItemList from './componentes/itemList'
+import Animado from './componentes/animado3d';
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/servicioTecnico" element={<Servicios />} />
           <Route exact path="/contactenos" element={<Contactar/>}/>
           <Route exact path="/tienda" element={<ItemList/>}/>
+          <Route exact path="/animacion" element={<Animado/>}/>
         </Routes>
         <Footer />
       </div>

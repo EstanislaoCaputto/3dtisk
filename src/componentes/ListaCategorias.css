@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: row nowrap;
+    align-items: baseline;
+    
+}
+.cont-categori{
+    display: flex;
+    min-width: 205px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+    border: solid 2px grey!important;
+    border-radius: 25%;
+}
+.img{
+    margin: 5px;
+}
+
+@media screen and (max-width: 560px) {
+    .container{
+        display: none;
+        flex-direction: column;
+    }
+}

@@ -1,7 +1,11 @@
 // import { useEffect, useState } from 'react'
 import {Carousel, Image} from 'react-bootstrap'
 import './carruselDeFotos.css'
-import foto1 from './img/Ecofila-Naranja-1080x450-1-1024x427.jpg'
+import foto1 from './img/Flyer fil 3N3.jpg'
+import foto2 from './img/Flyer fil grilon.jpg'
+import foto3 from './img/summer-fest-nuevos-modelos-desktop.jpg'
+import foto4 from './img/EditadoSummerfest 2 sin sombra.jpg'
+import foto5 from './img/Summerfest 2 con sombra.jpg'
 
 
 function CarruselDeFotos() {
@@ -35,35 +39,44 @@ function CarruselDeFotos() {
                             src={foto1}
                             alt="filamento"
                             fluid
+                            
                         />
-                        <Carousel.Caption>
-                            <h3>Que hacemo?</h3>
-                            <p>Vamo a la bu rar</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <Image
                             className="imgFilamento"
-                            src={foto1}
+                            src={foto2}
                             alt="filamento"
                             fluid
+                            
                         />
-                        <Carousel.Caption>
-                            <h3>Podes poner un titulo chico</h3>
-                            <p>Cualquier cosa podes escribir aca</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <Image
                             className="imgFilamento"
-                            src={foto1}
+                            src={foto3}
                             alt="filamento"
                             fluid
+                            
                         />
-                        <Carousel.Caption>
-                            <h3>Esto es otra foto</h3>
-                            <p>tercer carrusel</p>
-                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <Image
+                            className="imgFilamento"
+                            src={foto4}
+                            alt="filamento"
+                            fluid
+                            
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <Image
+                            className="imgFilamento"
+                            src={foto5}
+                            alt="filamento"
+                            fluid
+                            
+                        />
                     </Carousel.Item>
 
                 </Carousel>
