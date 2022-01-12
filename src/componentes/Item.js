@@ -14,7 +14,7 @@ export default function Item({Nombre, Tipo, Categorías, Imágenes, PrecioNormal
         <>
             <div className="container-productos">
 
-                <Image className="imgProd" src={picture} fluid />
+                <Image className="imgProd" src={picture} alt="imagen" fluid />
 
                 <div className="container-info">
                     <h2>{Nombre}</h2>
