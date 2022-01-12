@@ -63,7 +63,7 @@ export default function ItemList() {
             <div className='lista'>
 
                 {productos.map((elProd) => (
-                    <Item key={elProd.id-productos} {...elProd} />
+                    <Item key={elProd.id} {...elProd} />
                 ))}
 
             </div>
