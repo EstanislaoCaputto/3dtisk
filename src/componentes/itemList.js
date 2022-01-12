@@ -10,8 +10,8 @@ export default function ItemList() {
 
     useEffect(()=>{
         
-            const getProductos = async () => {
-                let response = await fetch('https://servidor-3dtisk.herokuapp.com/api/productos',{
+            const getProductos = async () => {//'https://servidor-3dtisk.herokuapp.com/api/productos'
+                let response = await fetch('https://localhost:8080/api/productos',{
                     method:'GET'
                 })
                 if(!response.ok) {
