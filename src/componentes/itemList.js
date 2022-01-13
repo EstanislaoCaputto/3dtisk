@@ -10,9 +10,11 @@ export default function ItemList() {
 
     useEffect(()=>{
         
-            const getProductos = async () => {//'https://servidor-3dtisk.herokuapp.com/api/productos', 'http://localhost:8080/api/productos'
+            const getProductos = async () => {//'https://servidor-3dtisk.herokuapp.com/api/productos', 'http://localhost:8080/api/productos', 'https://3dtisk.com.ar/wp-json/wc/store/products'
                 let response = await fetch('https://servidor-3dtisk.herokuapp.com/api/productos',{
                     method:'GET'
+                    //Clave del cliente:ck_38d8af740671276a13ff138fa7792c78a1704584
+                    //Clave secreta cliente: cs_028ca33bcc5d5bf4b1cabc70b9159ddaf4a7d5d8
                 })
                 if(!response.ok) {
                     // oups! something went wrong

@@ -22,8 +22,8 @@ export default function Item({Nombre, Tipo, Categorías, Imágenes, PrecioNormal
                     <ul>
                         <li><p>Tipo: {Tipo}</p></li>
                         <li><p>Marca: {categoria}</p></li>
-
                     </ul>
+                    <Button variant="warning" className="boton">Comprar</Button>
                     
                 </div>
 

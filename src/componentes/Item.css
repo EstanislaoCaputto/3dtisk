@@ -20,18 +20,23 @@
 .container-info{
     display: flex;
     flex-direction: column;
-    max-height: 174px;
+    max-height: 350px;
     align-items: center;
+    justify-content: center;
+    
 }
+
 .imgProd{
-    max-width: 390px;
-    max-height: 390px;
+    max-width: 320px;
+    max-height: 320px;
     border-radius: 5%;
 }
 .boton {
-    display: flex;
+    display: inline-block;
+    margin-top: -30px;
+    width: 90%;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
 /* .contDesc{
