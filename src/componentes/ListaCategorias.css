@@ -1,7 +1,7 @@
 .container{
     display: flex;
     flex-direction: row nowrap;
-    align-items: baseline;
+    justify-content: space-around;
     
 }
 .cont-categori{
@@ -19,9 +19,24 @@
     margin: 5px;
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 800px) {
     .container{
-        display: none;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: auto auto;
+        gap: 15px;
+        justify-content: space-around;
+        background-color: navajowhite;
+    }
+    .cont-categori{
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .img{
+        max-height: 60px;
+        max-width: 60px;
+    }
+    .titulo{
+        font-size: 12px;
     }
 }

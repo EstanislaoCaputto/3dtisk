@@ -2,12 +2,13 @@
     display:flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
 }
+
 .container-productos {
-    flex-direction: column;
-    max-width: 30%;
+    justify-items: center;
+    width: 30%;
     border-radius: 5%;
     border-style: outset;
     margin: 3px 5px;
@@ -27,9 +28,7 @@
 }
 
 .imgProd{
-    max-width: 320px;
-    max-height: 320px;
-    border-radius: 5%;
+    display: flex;
 }
 .boton {
     display: inline-block;
@@ -37,6 +36,11 @@
     width: 90%;
     align-items: center;
     justify-content: start;
+}
+.animacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /* .contDesc{
@@ -83,9 +87,14 @@ ul{
 }
 @media screen and (max-width: 800px){ 
     .lista{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        justify-content: space-around;
+        align-items: stretch;
+        
     }
     .container-productos{
-        max-width: 50%;
+        width: 100%;
+
     }
 }

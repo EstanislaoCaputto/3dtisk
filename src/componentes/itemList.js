@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Spinner } from 'react-bootstrap';
 import Item from './Item';
+import {Animado, Animado2, Animado3} from './animado3d'
+
 
 
 
@@ -61,7 +63,12 @@ export default function ItemList() {
 
     return(
         
-        <>
+        <div className='Cuerpo'>
+            <div className='animacion'>
+                <Animado/>
+                <Animado2/>
+                <Animado3/>
+            </div>
             <div className='lista'>
 
                 {productos.map((elProd) => (
@@ -69,6 +76,6 @@ export default function ItemList() {
                 ))}
 
             </div>
-        </>
+        </div>
     )
 };

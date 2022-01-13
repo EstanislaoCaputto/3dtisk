@@ -8,7 +8,7 @@ import Footer from './componentes/Footer';
 import './app.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import ItemList from './componentes/itemList'
-import Animado from './componentes/animado3d';
+import {Animado} from './componentes/animado3d';
 
 
 
