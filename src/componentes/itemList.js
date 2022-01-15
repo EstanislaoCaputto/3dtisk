@@ -31,7 +31,7 @@ export default function ItemList() {
                     return;
                 }
                 const posts = await response.json();
-                setProductos(posts.payload)
+                setProductos(posts)
                 console.log(posts);
                 
                 setCargar(false)
