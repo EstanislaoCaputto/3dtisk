@@ -1,48 +1,28 @@
-import { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import imagMock from './img/Ender-3-Max-izq.png'
 
-function ItemDetalle() {
-    const [ activado, setActivado] = useState(false);
+function ItemDetalle({Nombre, PrecioNormal, Descripción, Imágenes }) {
+    let nombre = Nombre.split('FDM')[1]
+    let precio = PrecioNormal.toLocalString()
+    let imagen = Imágenes.split(',')[0]
     
-    useEffect(()=>{
-        const getProductos = async () =>{}
-    },[])
-
-    const onAdd=(Contar)=>{
-       alert('Comprado');
-    }
-    const AgregarCarrito=()=>{
-        setActivado(true);
-        alert('Agregado')
-    }
-
     return(
         <>
             
-            <div className="container" style={{width:'350px'}}>
+            <div className="container" >
                 <Card>
-                    <Card.Img variant="top" src={imagMock} alt="ImagenProducto" />
+                    <Card.Img variant="top" src={imagen} alt="ImagenProducto" />
                     <Card.Body>
                         <Card.Title>
-                            
+                            {nombre}
                         </Card.Title>
                         <Card.Text>
-                                                                       
+                            {precio}
+                        </Card.Text>
+                        <Card.Text>
+                            {Descripción}                               
                         </Card.Text>
                                                
-                        {!activado ?
-                        <>
-                        <button className="btn btn-warning" onClick={onAdd}>Comprar</button>
-                        <button className="btn btn-warning" onClick={AgregarCarrito}>Agregar al carro</button>
-                        </>
-                        :
-                        <>
-                        <Link className="btn btn-success" to="/">Terminar Compra</Link>
-                        <Link className="btn btn-primary" to="/">Volver a Items</Link>
-                        </>
-                        }
+                        
                         
                     </Card.Body>
                 </Card>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Spinner } from 'react-bootstrap';
 import Item from './Item';
-import {Animado, Animado2, Animado3} from './animado3d'
+import api from '../db/woocomerce.js'
 
 
 
@@ -11,25 +11,33 @@ export default function ItemList() {
     const [productos, setProductos] = useState([]);
 
     useEffect(()=>{
-        
-            const getProductos = async () => {//'https://servidor-3dtisk.herokuapp.com/api/productos', 'http://localhost:8080/api/productos', 'https://3dtisk.com.ar/wp-json/wc/store/products'
-                let response = await fetch('https://servidor-3dtisk.herokuapp.com/api/productos',{
-                    method:'GET'
-                    //Clave del cliente:ck_38d8af740671276a13ff138fa7792c78a1704584
-                    //Clave secreta cliente: cs_028ca33bcc5d5bf4b1cabc70b9159ddaf4a7d5d8
-                })
-                if(!response.ok) {
-                    // oups! something went wrong
-                    return;
-                }
-                const posts = await response.json();
-                setProductos(posts.payload)
-                console.log(posts);
-                
-                setCargar(false)
 
-            }
-            getProductos();
+        //-----------------woocommers------------------//
+        api.get('products',{per_page:100}).then((response)=>{
+            setProductos(response.data)
+            setCargar(false)
+            console.log(response.data);
+        }).catch((error)=>{
+            console.log(error.response.data);
+        })
+        
+            // const getProductos = async () => {//'https://servidor-3dtisk.herokuapp.com/api/productos', 'http://localhost:8080/api/productos', 'https://3dtisk.com.ar/wp-json/wc/store/products'
+            //     let response = await fetch('https://servidor-3dtisk.herokuapp.com/api/productos',{
+            //         method:'GET'
+                   
+            //     })
+            //     if(!response.ok) {
+            //         // oups! something went wrong
+            //         return;
+            //     }
+            //     const posts = await response.json();
+            //     setProductos(posts.payload)
+            //     console.log(posts);
+                
+            //     setCargar(false)
+
+            // }
+            // getProductos();
         
             //------------Firebase------------------------------//
             // const getProductos = async () => {
@@ -53,8 +61,8 @@ export default function ItemList() {
         
         return (
             <>
-                <div>
-                    <Spinner animation="border" variant="info" />
+                <div className='Cargador'>
+                    <Spinner animation="border" variant="info" size='lg'/>
                     <h1>Cargando, porfavor espere... </h1>
                 </div>
             </>
@@ -64,11 +72,11 @@ export default function ItemList() {
     return(
         
         <div className='Cuerpo'>
-            <div className='animacion'>
+            {/* <div className='animacion'>
                 <Animado/>
                 <Animado2/>
                 <Animado3/>
-            </div>
+            </div> */}
             <div className='lista'>
 
                 {productos.map((elProd) => (

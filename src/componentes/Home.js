@@ -1,8 +1,9 @@
 import CarruselDeFotos from "./CarruselDeFotos.js";
 import Pagos from "./Pagos.js";
 import './home.css'
-import ItemList from "./itemList.js";
+import Recomendados from "./Recomendado.js";
 import ListaCategorias from "./ListaCategorias.js";
+
 
 function Home() {
     return(
@@ -12,8 +13,9 @@ function Home() {
             <Pagos/>
             <div className="separador"></div>
             <ListaCategorias/>
+            
             <div className="separador"></div>
-            <ItemList/>
+            <Recomendados/>
             <div className="separador"></div>
         </>
     )

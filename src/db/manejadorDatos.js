@@ -1,15 +1,10 @@
-import knex from "knex";
+import fetch from 'node-fetch'
 
-export const mariadb = knex({
-  client: 'mysql',
-  version: '10.4.22',
-  connection: {
-    host: 'us-cdbr-east-05.cleardb.net',
-    port: 3306,
-    user: 'ba737235d69cd6',
-    password:'163120f7',
-    database: 'heroku_64fd557327bbe24'
-  },//mysql://ba737235d69cd6:163120f7@us-cdbr-east-05.cleardb.net/heroku_64fd557327bbe24?reconnect=true
-  pool:{min: 0, max:10}
-})
-
+let buscarObjetos = async()=>{
+  let obj = await fetch('https://servidor-3dtisk.herokuapp.com/api/productos',{
+    method:'GET'
+  })
+  let respuesta = await obj.json()
+  return {status:'Joya', obj:respuesta}
+}
+export default buscarObjetos;

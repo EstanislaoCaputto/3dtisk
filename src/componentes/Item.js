@@ -4,28 +4,24 @@ import './Item.css'
 
 
 
-export default function Item({Nombre, Tipo, Categorías, Imágenes, PrecioNormal}) {
-    let imagen = Imágenes
-    let picture = imagen.split(',')[0]
-    let categoria = Categorías.split('>')[1].split(',')[0]
-    let precio = PrecioNormal.toLocaleString()
+export default function Item({name, categories, images, price, permalink}) {
+    let imagen = images[0].src
+    let categoria = categories[0].name
+    let pre = parseInt(price).toLocaleString()
     
     return(
         <>
             <div className="container-productos">
                 <div className="imgProd">
-                    <Image src={picture} alt="imagen" fluid />
+                    <Image src={imagen} alt="imagen" fluid/>
                 </div>
 
                 <div className="container-info">
-                    <h2>{Nombre}</h2>
-                    <p>Precio: ${precio}</p>
-                    <ul>
-                        <li><p>Tipo: {Tipo}</p></li>
-                        <li><p>Marca: {categoria}</p></li>
-                    </ul>
-                    <Button variant="warning" className="boton">Comprar</Button>
-                    
+                    <h2>{name}</h2>
+                    <p>Precio: ${pre}</p>
+                    <a href={permalink} className="boton">
+                    <Button variant="warning" className="boton">Ver</Button>
+                    </a>
                 </div>
 
                 

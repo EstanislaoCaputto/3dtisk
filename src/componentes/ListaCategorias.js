@@ -28,7 +28,7 @@ export default function ListaCategorias(){
             <div className="row-4 cont-categori">
                 <div className="card-categori">
                     <img src={resina} alt='Impresora FDM' className='img' />
-                    <p className='titulo'>RESINA</p>
+                    <p className='titulo'>REPUESTOS</p>
                 </div>
             </div>
         </div>
