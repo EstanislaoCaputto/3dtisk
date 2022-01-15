@@ -13,7 +13,7 @@ export default function ItemList() {
     useEffect(()=>{
 
         //-----------------woocommers------------------//
-        api.get('products',{per_page:100}).then((response)=>{
+        api.get('products',{per_page:60}).then((response)=>{
             setProductos(response.data)
             setCargar(false)
             console.log(response.data);
