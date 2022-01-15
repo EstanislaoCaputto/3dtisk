@@ -13,31 +13,31 @@ export default function ItemList() {
     useEffect(()=>{
 
         //-----------------woocommers------------------//
-        api.get('products',{per_page:60}).then((response)=>{
-            setProductos(response.data)
-            setCargar(false)
-            console.log(response.data);
-        }).catch((error)=>{
-            console.log(error.response.data);
-        })
+        // api.get('products',{per_page:60}).then((response)=>{
+        //     setProductos(response.data)
+        //     setCargar(false)
+        //     console.log(response.data);
+        // }).catch((error)=>{
+        //     console.log(error.response.data);
+        // })
         
-            // const getProductos = async () => {//'https://servidor-3dtisk.herokuapp.com/api/productos', 'http://localhost:8080/api/productos', 'https://3dtisk.com.ar/wp-json/wc/store/products'
-            //     let response = await fetch('https://servidor-3dtisk.herokuapp.com/api/productos',{
-            //         method:'GET'
+            const getProductos = async () => {//'https://servidor-3dtisk.herokuapp.com/api/productos', 'http://localhost:8080/api/productos', 'https://3dtisk.com.ar/wp-json/wc/store/products'
+                let response = await fetch('https://3dtisk.com.ar/wp-json/wc/store/products?per_page=100',{
+                    per_page:60
                    
-            //     })
-            //     if(!response.ok) {
-            //         // oups! something went wrong
-            //         return;
-            //     }
-            //     const posts = await response.json();
-            //     setProductos(posts.payload)
-            //     console.log(posts);
+                })
+                if(!response.ok) {
+                    // oups! something went wrong
+                    return;
+                }
+                const posts = await response.json();
+                setProductos(posts.payload)
+                console.log(posts);
                 
-            //     setCargar(false)
+                setCargar(false)
 
-            // }
-            // getProductos();
+            }
+            getProductos();
         
             //------------Firebase------------------------------//
             // const getProductos = async () => {
