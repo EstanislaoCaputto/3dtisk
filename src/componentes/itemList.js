@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Spinner } from 'react-bootstrap';
 import Item from './Item';
-import api from '../db/woocomerce.js'
+//import api from '../db/woocomerce.js'
 
 
 

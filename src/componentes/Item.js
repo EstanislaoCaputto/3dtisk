@@ -4,10 +4,10 @@ import './Item.css'
 
 
 
-export default function Item({name, categories, images, price, permalink}) {
+export default function Item({name, categories, images, prices, permalink}) {
     let imagen = images[0].src
     let categoria = categories[0].name
-    let pre = parseInt(price).toLocaleString()
+    let pre = parseInt(prices.price)/100
     
     return(
         <>
@@ -18,7 +18,8 @@ export default function Item({name, categories, images, price, permalink}) {
 
                 <div className="container-info">
                     <h2>{name}</h2>
-                    <p>Precio: ${pre}</p>
+                    <p>{categoria}</p>
+                    <p>Precio: ${pre.toLocaleString()}</p>
                     <a href={permalink} className="boton">
                     <Button variant="warning" className="boton">Ver</Button>
                     </a>

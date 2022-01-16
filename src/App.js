@@ -9,6 +9,7 @@ import './app.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import ItemList from './componentes/itemList'
 import {Animado} from './componentes/animado3d';
+import CrearCuenta from './componentes/CrearCuenta';
 
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/contactenos" element={<Contactar/>}/>
           <Route exact path="/tienda" element={<ItemList/>}/>
           <Route exact path="/animacion" element={<Animado/>}/>
+          <Route exact path="/crearCuenta" element={<CrearCuenta/>}/>
         </Routes>
         <Footer />
       </div>

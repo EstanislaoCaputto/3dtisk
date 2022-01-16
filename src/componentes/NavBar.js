@@ -17,7 +17,7 @@ function NavBar() {
                         </NavDropdown>
                         <Nav.Link href="/servicioTecnico">Soporte Técnico</Nav.Link>
                         <Nav.Link href="/contactenos">Contáctenos</Nav.Link>
-                        <Nav.Link href="#pricing">Mi Cuenta</Nav.Link>
+                        <Nav.Link href="/crearCuenta">Mi Cuenta</Nav.Link>
                         <Nav.Link href="#pricing">Carrito</Nav.Link>
                         
                     </Nav>

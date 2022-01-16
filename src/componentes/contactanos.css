@@ -3,12 +3,24 @@
     flex-direction: column;
     background-color:#7A7A7A ;
     align-items: center;
-    justify-content: center;
-    margin-top: 5rem;
+    justify-content: space-around;
     height: 500px;
 }
-.titu{
-    margin-bottom: 60px;
+.contenedor-may{
+    width: 80%;
+    text-align: center;
+    padding: 5px;
+    border:2px solid black;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.campo-text{
+    margin-bottom: 5px;
+}
+.btn{
+    margin-top: 15px;
 }
 
 .logoFace{

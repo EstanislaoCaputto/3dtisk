@@ -38,8 +38,8 @@
 .imgProd{
     display: flex;
     margin: auto;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
 }
 .boton {
     display: inline-block;
@@ -103,6 +103,10 @@ ul{
     .container-productos {
         width: 370px!important;
     }
+    .imgProd{
+        width: 250px;
+        height: 250px;
+    }
 }
 @media screen and (max-width: 1024px) {
     .lista{
@@ -112,7 +116,7 @@ ul{
         height: 480px;
     }
     .imgProd{
-        width: 270px!important;
-        height: 270px;
+        width: 200px!important;
+        height: 200px;
     }
 }

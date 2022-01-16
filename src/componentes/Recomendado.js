@@ -19,7 +19,6 @@ export default function Recomendados(){
 
         })
     })
-    console.log(recom2);
     let image = recom.split(',')
     let imag1 = recom2.split(',')
     return (
