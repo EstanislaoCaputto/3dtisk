@@ -11,11 +11,11 @@ function Home() {
             <CarruselDeFotos/>
             <div className="separador"></div>
             <Pagos/>
-            <div className="separador"></div>
-            <ListaCategorias/>
             
             <div className="separador"></div>
             <Recomendados/>
+            <div className="separador"></div>
+            <ListaCategorias/>
             <div className="separador"></div>
         </>
     )
