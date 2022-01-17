@@ -30,6 +30,7 @@ export default function Recomendados(){
             <h3>Recomendados!!</h3>
             <div className='Recomend'>
                 <div className='cadaCarru'>
+                    <h3>Trimaker Nebula</h3>
                 <Carousel fade>
                     <Carousel.Item>
                         <img src={image[0]} alt='hola' className='imgRecomen img-fluid'></img>
@@ -49,6 +50,7 @@ export default function Recomendados(){
                 </Carousel>
                 </div>
                 <div className='cadaCarru'>
+                    <h3>Creality Genius</h3>
                 <Carousel fade>
                     <Carousel.Item>
                         <img src={imag1[0]} alt='hola' className='imgRecomen img-fluid'></img>
@@ -68,6 +70,7 @@ export default function Recomendados(){
                 </Carousel>
                 </div>
                 <div className='cadaCarru'>
+                    <h3>Magna 2</h3>
                 <Carousel fade>
                     <Carousel.Item>
                         <img src={imag2[0]} alt='hola' className='imgRecomen img-fluid'></img>
