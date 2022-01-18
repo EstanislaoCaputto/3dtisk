@@ -1,29 +1,43 @@
 import { useEffect, useState } from 'react'
-import api from '../db/woocomerce.js'
+import { Spinner } from 'react-bootstrap'
 import './IdealPrincipiante.css'
 
 export default function Principiantes(){
     const [impresoras, setImpresoras] = useState([])
 
     useEffect(()=>{
-        const getProductos = async () => {//'https://servidor-3dtisk.herokuapp.com/api/productos', 'http://localhost:8080/api/productos', 'https://3dtisk.com.ar/wp-json/wc/store/products'
+        const getImpresoras = async () => {
             let response = await fetch('https://3dtisk.com.ar/wp-json/wc/store/products?per_page=100',{
-                method:'GET'
-               
+                per_page:70
             })
             if(!response.ok) {
-                // oups! something went wrong
-                return;
+                return
             }
-            const posts = await response.json();
-            setImpresoras(posts)
+            const impre = await response.json()
+            setImpresoras(impre)
             
         }
-        getProductos();
+        getImpresoras()
+        // buscarObjetos().then(r=>{
+        //     let todo = r.obj.payload
+        //     setImpresoras(todo)
+        // })   
     },[])
+    
+    console.log(impresoras);
     let magna1 = impresoras[57]
     let ender3 = impresoras[53]
     let duplicator = impresoras[45]
+
+    if(impresoras.length === 0){
+        return(
+            <div className='Cargador'>
+                <Spinner animation='border' variant='info' size='lg'/>
+                <h2>Cargando porfavor espere... </h2>
+            </div>
+        )
+    }
+
     return(
         <div className='contPrinci'>
             <h2>Ideal para principiantes</h2>
