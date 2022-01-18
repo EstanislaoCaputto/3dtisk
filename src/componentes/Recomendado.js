@@ -39,20 +39,20 @@ export default function Recomendados(){
             <h3>Recomendados!!</h3>
             <div className='Recomend'>
                 <div className='cadaCarru'>
-                    <Carousel fade>
-                        <Carousel.Item>
+                    <Carousel className='hola' fade>
+                        <Carousel.Item className='hola'>
                             <img src={image[0]} alt='hola' className='imgRecomen'></img>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item className='hola'>
                             <img src={image[1]} alt='hola' className='imgRecomen'></img>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item className='hola'>
                             <img src={image[2]} alt='hola' className='imgRecomen'></img>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item className='hola'>
                             <img src={image[3]} alt='hola' className='imgRecomen'></img>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item className='hola'>
                             <img src={image[4]} alt='hola' className='imgRecomen'></img>
                         </Carousel.Item>
                     </Carousel>
@@ -63,20 +63,20 @@ export default function Recomendados(){
                     </div>
                 </div>
                 <div className='cadaCarru'>
-                <Carousel fade>
-                    <Carousel.Item>
+                <Carousel className='hola' fade>
+                    <Carousel.Item className='hola'>
                         <img src={imag1[0]} alt='hola' className='imgRecomen img-fluid'></img>
                     </Carousel.Item>
-                    <Carousel.Item>
+                    <Carousel.Item className='hola'>
                         <img src={imag1[1]} alt='hola' className='imgRecomen img-fluid'></img>
                     </Carousel.Item>
-                    <Carousel.Item>
+                    <Carousel.Item className='hola'>
                         <img src={imag1[2]} alt='hola' className='imgRecomen img-fluid'></img>
                     </Carousel.Item>
-                    <Carousel.Item>
+                    <Carousel.Item className='hola'>
                         <img src={imag1[3]} alt='hola' className='imgRecomen img-fluid'></img>
                     </Carousel.Item>
-                    <Carousel.Item>
+                    <Carousel.Item className='hola'>
                         <img src={imag1[4]} alt='hola' className='imgRecomen img-fluid'></img>
                     </Carousel.Item>
                 </Carousel>
@@ -87,20 +87,20 @@ export default function Recomendados(){
                     </div>
                 </div>
                 <div className='cadaCarru'>
-                    <Carousel fade>
-                        <Carousel.Item>
+                    <Carousel className='hola' fade>
+                        <Carousel.Item className='hola'>
                             <img src={imag2[0]} alt='hola' className='imgRecomen img-fluid'></img>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item className='hola'>
                             <img src={imag2[1]} alt='hola' className='imgRecomen img-fluid'></img>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item className='hola'>
                             <img src={imag2[2]} alt='hola' className='imgRecomen img-fluid'></img>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item className='hola'>
                             <img src={imag2[3]} alt='hola' className='imgRecomen img-fluid'></img>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item className='hola'>
                             <img src={imag2[4]} alt='hola' className='imgRecomen img-fluid'></img>
                         </Carousel.Item>
                     </Carousel>

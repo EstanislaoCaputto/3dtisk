@@ -4,6 +4,7 @@ import './home.css'
 import Recomendados from "./Recomendado.js";
 import ListaCategorias from "./ListaCategorias.js";
 import Principiantes from "./IdealPrincipiantes.js";
+import SiguienteNivel from "./SiguienteNivel.js";
 
 
 function Home() {
@@ -16,6 +17,8 @@ function Home() {
             <Recomendados/>
             <div className="separador"></div>
             <Principiantes />
+            <div className="separador"></div>
+            <SiguienteNivel />
             <div className="separador"></div>
             <ListaCategorias/>
             <div className="separador"></div>

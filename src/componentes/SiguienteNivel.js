@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Spinner } from 'react-bootstrap'
-import './IdealPrincipiante.css'
 
-export default function Principiantes(){
+export default function SiguienteNivel(){
     const [impresoras, setImpresoras] = useState([])
 
     useEffect(()=>{
@@ -25,9 +24,9 @@ export default function Principiantes(){
     },[])
     
     console.log(impresoras);
-    let magna1 = impresoras[57]
-    let ender3 = impresoras[53]
-    let duplicator = impresoras[45]
+    let hydraPlus = impresoras[21]
+    let enderCr5Pro = impresoras[31]
+    let artillerySWX1 = impresoras[58]
 
     if(impresoras.length === 0){
         return(
@@ -40,20 +39,20 @@ export default function Principiantes(){
 
     return(
         <div className='contPrinci'>
-            <h2>Ideal para principiantes</h2>
+            <h2>Tus Impresiones en otro Nivel!!</h2>
             <div className='idealPrinci'>
 
                 <div className='principiantes'>
-                    <h3>{magna1.name.split('D ')[1]}</h3>
-                    <img src={magna1.images[0].src} alt='magna1' className='imgPrinci'></img>
+                    <h3>{hydraPlus.name.split('D')[1]}</h3>
+                    <img src={hydraPlus.images[0].thumbnail} alt='magna1' className='imgPrinci'></img>
                 </div>
                 <div className='principiantes'>
-                    <h3>{ender3.name.split('D ')[1]}</h3>
-                    <img src={ender3.images[0].src} alt='magna1' className='imgPrinci'></img>
+                    <h3>{enderCr5Pro.name.split('D')[1]}</h3>
+                    <img src={enderCr5Pro.images[0].thumbnail} alt='magna1' className='imgPrinci'></img>
                 </div>
                 <div className='principiantes'>
-                    <h3>{duplicator.name.split('d ')[1]}</h3>
-                    <img src={duplicator.images[0].src} alt='magna1' className='imgPrinci'></img>
+                    <h3>{artillerySWX1.name.split('a ')[1]}</h3>
+                    <img src={artillerySWX1.images[0].thumbnail} alt='magna1' className='imgPrinci'></img>
                 </div>
             </div>
         </div>
