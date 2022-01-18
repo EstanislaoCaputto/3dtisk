@@ -32,7 +32,6 @@ export default function ItemList() {
                 }
                 const posts = await response.json();
                 setProductos(posts)
-                console.log(posts);
                 
                 setCargar(false)
 

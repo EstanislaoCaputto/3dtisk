@@ -1,0 +1,18 @@
+.ConteDetalle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+.Detalles{
+    display: flex;
+    flex-direction: row;
+}
+.FotoDetalle{
+    width: 500px;
+    height: 500px;
+}
+.Info{
+    width: 65%;
+    text-align: justify;
+}
