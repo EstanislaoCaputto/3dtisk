@@ -1,0 +1,23 @@
+.contPrinci{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+}
+.idealPrinci{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+}
+.principiantes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.imgPrinci{
+    width: 400px;
+    height: 400px;
+}

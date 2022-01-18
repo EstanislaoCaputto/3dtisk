@@ -24,6 +24,12 @@
     width: 400px;
     height: 400px!important;
 }
+.desc-carru{
+    margin-top: 5px;
+    padding-left: 15px;
+    border-left:15px solid coral;
+    text-align: justify;
+}
 .imgRecomen{
     display: block;
     width: 100%;

@@ -40,37 +40,3 @@ function Contactar() {
 }
 
 export default Contactar;
-
-{/* <h1>Crear Usuario</h1>
-<div>
-<Formik
-    initialValues={{
-        firstName: '',
-        lastName: '',
-        email: '',
-        tel:'',
-    }}
-    onSubmit={async (values) => {
-        await new Promise((r) => setTimeout(r, 500));
-        alert(JSON.stringify(values, null, 2));
-    }}
->
-    <Form>
-        <label htmlFor="firstName">First Name</label>
-        <Field id="firstName" name="firstName" placeholder="Juanse" />
-
-        <label htmlFor="lastName">Last Name</label>
-        <Field id="lastName" name="lastName" placeholder="Alekian" />
-
-        <label htmlFor="email">Email</label>
-        <Field
-            id="email"
-            name="email"
-            placeholder="juanse@mail.com"
-            type="email"
-        />
-        <button type="submit">Submit</button>
-    </Form>
-</Formik>
-</div> */}
-{/* https://www.creativosonline.org/formularios-css-html.html */}
