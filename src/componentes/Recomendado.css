@@ -43,7 +43,9 @@
 .carousel-indicators{
     display: none!important;
 }
-@media screen and (max-width: 425px) {
+
+
+@media screen and (max-width: 600px) {
     .ManejOfer{
         margin-top: -200px;
         height: 1800px!important;

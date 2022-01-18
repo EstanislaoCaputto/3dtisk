@@ -22,14 +22,28 @@
     width: 350px;
     height: 350px;
 }
+@media screen and (max-width:1024px) {
+    .imgPrinci{
+        width: 250px;
+        height: 250px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .imgPrinci{
-        width: 250px!important;
-        height: 250px!important;
+        width: 180px!important;
+        height: 180px!important;
+    }
+    .principiantes{
+        width: 220px;
+    }
+    .contPrinci{
+        margin: 5px auto;
+        width: 90%;
+        justify-content: space-around!important;
     }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 550px) {
     .contPrinci{
         justify-content: space-around!important;
     }

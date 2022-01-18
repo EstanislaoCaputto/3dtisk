@@ -3,8 +3,8 @@ import {Carousel, Image} from 'react-bootstrap'
 import './carruselDeFotos.css'
 import foto1 from './img/Flyer fil 3N3.jpg'
 import foto2 from './img/Flyer fil grilon.jpg'
-import foto3 from './img/summer-fest-nuevos-modelos-desktop.jpg'
-import foto4 from './img/EditadoSummerfest 2 sin sombra.jpg'
+import foto3 from './img/Summerfest 1  con sombra.jpg'
+import foto4 from './img/Summerfest 2 sin sombra.jpg'
 import foto5 from './img/Summerfest 2 con sombra.jpg'
 
 
@@ -32,7 +32,7 @@ function CarruselDeFotos() {
         <>
 
             <div className='elCarruFoto'>
-                <Carousel>
+                <Carousel className='CarruCabeza'>
                     <Carousel.Item>
                         <Image
                             className="imgFilamento"
