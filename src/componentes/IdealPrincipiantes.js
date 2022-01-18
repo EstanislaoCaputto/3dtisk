@@ -6,9 +6,20 @@ export default function Principiantes(){
     const [impresoras, setImpresoras] = useState([])
 
     useEffect(()=>{
-        api.get('products', {per_page:60}).then(resultado=>{
-            setImpresoras(resultado.data)
-        })
+        const getProductos = async () => {//'https://servidor-3dtisk.herokuapp.com/api/productos', 'http://localhost:8080/api/productos', 'https://3dtisk.com.ar/wp-json/wc/store/products'
+            let response = await fetch('https://3dtisk.com.ar/wp-json/wc/store/products?per_page=100',{
+                method:'GET'
+               
+            })
+            if(!response.ok) {
+                // oups! something went wrong
+                return;
+            }
+            const posts = await response.json();
+            setImpresoras(posts)
+            
+        }
+        getProductos();
     },[])
     let magna1 = impresoras[57]
     let ender3 = impresoras[53]
