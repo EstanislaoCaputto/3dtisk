@@ -36,12 +36,15 @@
         height: 180px!important;
     }
     .principiantes{
-        width: 220px;
+        width: 90%;
     }
     .contPrinci{
         margin: 5px auto;
         width: 90%;
         justify-content: space-around!important;
+    }
+    .idealPrinci{
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 550px) {
