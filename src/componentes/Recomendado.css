@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: space-around;
     width: 98%;
-    height: 1100px;
+    height: 900px;
 }
 .hola{
     width: 380px;
@@ -23,14 +23,18 @@
     flex-direction: column;
     justify-content: center;
     width: 380px;
-    height: 380px;
 }
 .desc-carru{
-    width: 100%;
+    display: flex;
+    width: 380px;
+    flex-direction: column;
     margin-top: 5px;
     padding-left: 15px;
     border-left:15px solid coral;
     text-align: justify;
+}
+.btn{
+    width: 100%;
 }
 .imgRecomen{
     width: 100%;

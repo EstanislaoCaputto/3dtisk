@@ -8,6 +8,9 @@ function ItemDetalle({producto}){
     let foto = producto.images[0].src
     let marca = producto.categories[0].name
     let especifTecn = producto.description.split('ESPECIFICACIONES TÉCNICAS')[1]
+    let imagenes = []
+    imagenes.push(producto.images[0].src,producto.images[0].thumbnail, producto.images[1].src, producto.images[2].src)
+    console.log(imagenes)
     useEffect(()=>{
         let div = document.getElementById('Descri')
         let descripcion = producto.description.split('ESPECIFICACIONES TÉCNICAS')[0]
@@ -46,6 +49,13 @@ function ItemDetalle({producto}){
                                     <Tab.Pane eventKey='first'>
                                         <h3>Marca: {marca}</h3>
                                         <h3>Precio: ${precio}</h3>
+                                        <div className="contenedor-galeria">
+                                            {imagenes.map((src,index)=>{
+                                                return(
+                                                    <div key={index} className='contiene-foto'><img className='cadaImgGaleria img-fluid' src={src} alt={producto.name}></img></div>
+                                                )
+                                            }) }
+                                        </div>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey='second'>
                                         <div id="Descri">

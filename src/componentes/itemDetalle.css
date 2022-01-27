@@ -9,10 +9,33 @@
     flex-direction: row;
 }
 .FotoDetalle{
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 550px;
 }
 .Info{
     width: 65%;
     text-align: justify;
+}
+.contenedor-galeria{
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 480px;
+}
+.contiene-foto{
+    width: 220px;
+    height: 220px;
+}
+.cadaImgGaleria{
+    width: 100%;
+    height: 100%;
+}
+.row{
+    margin: 0px;
+}
+.cadaImgGaleria:hover{
+    width: 225px;
+    height: 225px;
 }
