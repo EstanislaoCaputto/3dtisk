@@ -48,13 +48,16 @@
     .contPrinci{
         justify-content: space-around!important;
     }
+    .idealPrinci{
+        flex-direction: column;
+    }
     .principiantes{
-        width: 140px;
+        width: 90%;
         justify-content: space-between;
         align-items: center;
     }
     .imgPrinci{
-        width: 100px!important;
-        height: 100px!important;
+        width: 150px!important;
+        height: 150px!important;
     }
 }
