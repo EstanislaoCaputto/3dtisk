@@ -1,0 +1,29 @@
+.carruEstandar{
+    width: 98%;
+    text-align: center;
+    margin-bottom: 30px;
+    align-content: center;
+}
+.slider{
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: 0px auto;
+}
+.card-img{
+    max-height: 350px!important;
+}
+.card{
+    display: flex!important;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px;
+    height: 492px;
+    padding: 0px;
+    margin: 2px 15px!important;
+}
+.precio{
+    color:#E69419;
+}

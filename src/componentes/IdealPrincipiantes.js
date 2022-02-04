@@ -24,6 +24,7 @@ export default function Principiantes(){
         // })   
     },[])
     let magna1 = impresoras.find(elem => elem.name==='Impresora 3D Hellbot Magna 1')
+    
     let ender3 = impresoras.find(elem => elem.name==='Impresora 3D Creality Ender 3 Pro')
     let duplicator = impresoras.find(elem => elem.name==='Impresora 3d I3 Mini Wanhao')
     if(impresoras.length === 0){
@@ -41,7 +42,7 @@ export default function Principiantes(){
             <div className='idealPrinci'>
 
                 <div className='principiantes'>
-                    <h3>{magna1.name.split('D ')[1]}</h3>
+                    <h3>{magna1.name.split('3D ')[1]}</h3>
                     <img src={magna1.images[0].src} alt='magna1' className='imgPrinci'></img>
                     <div className='desc-carru'>
                         <p>Este equipo es de lo mas vendidos en el mercado para cualquier Makers que quiera iniciarse en el mundo de las impresoras 3D, un costo muy optimizado que forma un gran equipo. Una mesa de 220mm x 220mm x 260mm, También cuenta con la capacidad de incorporarle mejoras como los drivers silenciosos.</p>
