@@ -11,7 +11,7 @@ function NavBar() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <NavDropdown title='Tienda' id="basic-nav-dropdown" menuVariant='dark'>
-                            <NavDropdown.Item href="/tienda">Todos los productos</NavDropdown.Item>
+                            <NavDropdown.Item href="/tienda/1">Todos los productos</NavDropdown.Item>
                             <NavDropdown.Item href="/tienda/fdm">Impresoras FDM</NavDropdown.Item>
                             <NavDropdown.Item href="/tienda/resina">Impresoras de Resina</NavDropdown.Item>
                             <NavDropdown.Item href="/tienda/insumos">Componentes</NavDropdown.Item>

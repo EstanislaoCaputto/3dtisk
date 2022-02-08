@@ -27,7 +27,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/servicioTecnico" element={<Servicios />} />
           <Route exact path="/contactenos" element={<Contactar/>}/>
-          <Route exact path="/tienda" element={<ItemList/>}/>
+          <Route exact path="/tienda/:Pagina" element={<ItemList/>}/>
           <Route exact path="/tienda/fdm" element={<Fdm/>}/>
           <Route exact path="/tienda/resina" element={<Resina/>}/>
           
@@ -42,3 +42,4 @@ function App() {
 }
 
 export default App;
+

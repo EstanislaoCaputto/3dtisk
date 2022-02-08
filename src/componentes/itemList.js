@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import {useParams} from 'react-router-dom'
 import { Spinner } from 'react-bootstrap';
 import Item from './Item';
 //import api from '../db/woocomerce.js'
@@ -7,6 +8,7 @@ import Item from './Item';
 
 
 export default function ItemList() {
+    const {Pagina} = useParams()
     const [cargar, setCargar] = useState(true);
     const [productos, setProductos] = useState([]);
 
@@ -22,7 +24,7 @@ export default function ItemList() {
         // })
         
             const getProductos = async () => {//'https://servidor-3dtisk.herokuapp.com/api/productos', 'http://localhost:8080/api/productos', 'https://3dtisk.com.ar/wp-json/wc/store/products'
-                let response = await fetch('https://3dtisk.com.ar/wp-json/wc/store/products?per_page=100',{
+                let response = await fetch(`https://3dtisk.com.ar/wp-json/wc/store/products?page=${Pagina}&per_page=100`,{
                     per_page:60
                    
                 })
@@ -83,6 +85,14 @@ export default function ItemList() {
                 ))}
 
             </div>
+            <nav aria-label="Page navigation example">
+                <ul className="pagination">
+                    
+                    <li className="page-item"><a className="page-link" href="/tienda/1">1</a></li>
+                    <li className="page-item"><a className="page-link" href="/tienda/2">2</a></li>
+                    
+                </ul>
+            </nav>
         </div>
     )
 };

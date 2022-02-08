@@ -18,12 +18,70 @@
 .card{
     display: flex!important;
     flex-direction: column;
+    align-items: stretch;
     justify-content: space-between;
-    width: 450px;
-    height: 492px;
-    padding: 0px;
-    margin: 2px 15px!important;
 }
+/* the slides */
+.slick-slide {
+    margin:2px 20px;
+}
+.slick-slide div:hover{
+    box-shadow: 1px 2px 5px gray;
+    transition: all 0.5s ease-out;
+}
+.slick-track {
+    display: flex!important;
+    align-items: center;
+    margin: 0px 0px 0px 0px!important;
+}
+.nombre{
+    color: black!important;
+}
+.instock{
+    color: black;
+    width: 100%;
+    background-color: green;
+    visibility: collapse;
+}
+.instock::after{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: 'Hay en Stock!!'; 
+    background-color: green;
+    visibility: visible;
+}
+.outofstock{
+    color: white;
+    width: 100%;
+    background-color: red;
+    visibility: hidden;
+}
+.outofstock::after{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: 'Sin Stock';
+    color: white;
+    background-color: red;
+    visibility: visible;
+}
+
 .precio{
     color:#E69419;
 }
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+.card-body{
+    padding: 0!important;
+}
+.btn{
+    display: flex!important;
+    margin: 10px 5px;
+    border: 1px solid black!important;
+}
+
