@@ -25,7 +25,7 @@
 .slick-slide {
     margin:2px 20px;
 }
-.slick-slide div:hover{
+.slick-slide:hover{
     box-shadow: 1px 2px 5px gray;
     transition: all 0.5s ease-out;
 }
@@ -37,13 +37,13 @@
 .nombre{
     color: black!important;
 }
-.instock{
+.true{
     color: black;
     width: 100%;
     background-color: green;
-    visibility: collapse;
+    visibility: hidden;
 }
-.instock::after{
+.true::after{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,13 +51,13 @@
     background-color: green;
     visibility: visible;
 }
-.outofstock{
+.false{
     color: white;
     width: 100%;
     background-color: red;
     visibility: hidden;
 }
-.outofstock::after{
+.false::after{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,6 +78,11 @@
 }
 .card-body{
     padding: 0!important;
+    border-bottom: 0px!important;
+}
+.card-footer{
+    border-top: 0px;
+    padding: 5px!important;
 }
 .btn{
     display: flex!important;

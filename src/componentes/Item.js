@@ -8,7 +8,6 @@ import './Item.css'
 export default function Item({name, categories, images, prices, id, permalink}) {
     let imagen = images[0].src
     let categoria = categories[0].name
-    console.log(categories);
     let pre = parseInt(prices.price)/100
     
     return(

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import api from '../db/woocomerce.js'
+// import api from '../db/woocomerce.js'
 import CarruselDeFotos from "./CarruselDeFotos.js";
 import Pagos from "./Pagos.js";
 import './home.css'
@@ -28,13 +28,19 @@ function Home() {
     
     useEffect(()=>{
         let fetchProductos = async (nombre,seteo) =>{
-            let products1 = await api.get('products',{search:nombre})
-            .then(respu=>{
-                seteo(respu.data)
-            })
-            .catch((error)=> {
-                console.log(error)
-            })
+            let products = await fetch(`https://3dtisk.com.ar/wp-json/wc/store/products?search=${nombre}`)
+            if (!products.ok) {
+                console.log('Rejected');
+            }
+            let pd = await products.json()
+            seteo(pd)
+            // api.get('products',{search:nombre})
+            // .then(respu=>{
+            //     seteo(respu.data)
+            // })
+            // .catch((error)=> {
+            //     console.log(error)
+            // })
             
         }
         fetchProductos('Impresora 3D Artillery Genius Pro 220x220x250mm FDM', setProd1)
@@ -44,7 +50,7 @@ function Home() {
         fetchProductos('Impresora 3D Creality Ender-7 FDM', setProd5)
         fetchProductos('Impresora 3D Hellbot Magna 2 400 FDM Dykit', setProd6)
         fetchProductos('Impresora 3D Hellbot Magna 2 500 FDM Dykit', setProd7)
-        fetchProductos('Impresora 3D Hellbot Magna 2 300 Dykit', setProd8)
+        fetchProductos('Impresora Hellbot Magna 2 300 Dykit', setProd8)
         fetchProductos('Impresora 3D Artillery Genius Pro', setProd9)
         fetchProductos('Impresora FDM Trimaker Nebula', setProd10)
         fetchProductos('Biqu B1', setProd11)
@@ -52,35 +58,23 @@ function Home() {
         fetchProductos('Impresora 3D Hellbot Hidra Plus 300', setProd13)
         fetchProductos('Impresora 3D Creality Ender 3 pro', setProd14)
         fetchProductos('Impresora 3D Creality Ender 2 pro', setProd15)
-        fetchProductos('Impresora 3D Hellbot Magna 2 230', setProd16)
-        fetchProductos('Impresora 3D Creality Ender v2 ', setProd17)
+        fetchProductos('Impresora Hellbot Magna 2 230 Dykit', setProd16)
+        fetchProductos('Impresora Creality Ender 3 V2', setProd17)
 
     },[])
     
-    if(prod1.length===0||prod2.length===0||prod3.length===0||prod4.length===0||prod5.length===0||prod6.length===0||prod7.length===0){
+    if(prod1.length===0||prod2.length===0||prod3.length===0||prod4.length===0||prod5.length===0||prod6.length===0||prod7.length===0||prod14.length===0||prod15.length===0||prod16.length===0||prod17.length===0||prod8.length===0 || prod9.length===0 || prod10.length===0 || prod11.length===0 ||prod12.length===0 ||prod13.length===0){
         return(
             <div className='Cargador'>
                 <Spinner animation='border' variant='info' size='lg' />
             </div>
         )   
     }
-    if(prod8.length===0 || prod9.length===0 || prod10.length===0 || prod11.length===0 ||prod12.length===0 ||prod13.length===0){
-        return(
-            <div className='Cargador'>
-                <Spinner animation='border' variant='info' size='lg' />
-            </div>
-        )
-    }
-    if(prod14.length===0||prod15.length===0||prod16.length===0||prod17.length===0){
-        return(
-            <div className='Cargador'>
-                <Spinner animation='border' variant='info' size='lg' />
-            </div>
-        )   
-    }
-    let box1=[prod1[0],prod2[0],prod3[0],prod4[0],prod5[0],prod6[0]]
-    let box2=[prod7[1],prod8[0],prod9[0],prod10[0],prod11[0],prod12[0]]
-    let box3=[prod14[4],prod15[0],prod16[0],prod17[1],prod14[5],prod14[0]]
+
+
+    let box1=[prod1,prod2,prod3,prod4,prod5,prod6]
+    let box2=[prod7,prod8,prod9,prod10,prod11,prod12]
+    let box3=[prod15,prod14,prod13,prod16,prod17]
     return(
         <>
             <CarruselDeFotos/>
