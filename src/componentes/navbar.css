@@ -1,15 +1,40 @@
 .barraNavegacion{
     display: flex;
     width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap!important;
     justify-content: space-around;
     align-items: baseline;
     background-color: #dd9933;
     color: black;
 }
-
-
-
-@media screen and (max-width:560px) {
-    .barraNavegacion{}
+.miContainer{
+    margin-left: 1rem;
+    margin-right: .5rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
     
+}
+.navbar-collapse{
+    justify-content: end;
+}
+.navbar-nav{
+    width: 80%;
+    justify-content: space-between;
+}
+.img-avatar{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+.nav-link{
+    display: flex;
+    transition: none!important;
+    padding: 0!important;
+    margin: 2px;
+}
+.nav-link:hover{
+    border: 2px solid black;
 }

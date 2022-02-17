@@ -13,6 +13,7 @@ import CrearCuenta from './componentes/CrearCuenta';
 import ItemDetalleContenedor from './componentes/ItemDetalleContenedor';
 import Fdm from './componentes/Fdm';
 import Resina from './componentes/Resina';
+import {UserProvider} from './context/userContext'
 
 
 
@@ -20,23 +21,26 @@ import Resina from './componentes/Resina';
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
-        <Cabecera />
-        <NavBar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/servicioTecnico" element={<Servicios />} />
-          <Route exact path="/contactenos" element={<Contactar/>}/>
-          <Route exact path="/tienda/:Pagina" element={<ItemList/>}/>
-          <Route exact path="/tienda/fdm" element={<Fdm/>}/>
-          <Route exact path="/tienda/resina" element={<Resina/>}/>
-          
-          <Route exact path="/animacion" element={<Animado/>}/>
-          <Route exact path="/crearCuenta" element={<CrearCuenta/>}/>
-          <Route exact path="/producto/:Referencia" element={<ItemDetalleContenedor/>}/>
-        </Routes>
-        <Footer />
-      </div>
+      <UserProvider>
+
+        <div className="App">
+          <Cabecera />
+          <NavBar />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/servicioTecnico" element={<Servicios />} />
+            <Route exact path="/contactenos" element={<Contactar />} />
+            <Route exact path="/tienda/:Pagina" element={<ItemList />} />
+            <Route exact path="/tienda/fdm" element={<Fdm />} />
+            <Route exact path="/tienda/resina" element={<Resina />} />
+
+            <Route exact path="/animacion" element={<Animado />} />
+            <Route exact path="/crearCuenta" element={<CrearCuenta />} />
+            <Route exact path="/producto/:Referencia" element={<ItemDetalleContenedor />} />
+          </Routes>
+          <Footer />
+        </div>
+      </UserProvider>
     </BrowserRouter>
   );
 }

@@ -25,6 +25,7 @@ function Home() {
     const [prod15, setProd15] = useState([])
     const [prod16, setProd16] = useState([])
     const [prod17, setProd17] = useState([])
+    const [prod18, setProd18] = useState([])
     
     useEffect(()=>{
         let fetchProductos = async (nombre,seteo) =>{
@@ -60,10 +61,11 @@ function Home() {
         fetchProductos('Impresora 3D Creality Ender 2 pro', setProd15)
         fetchProductos('Impresora Hellbot Magna 2 230 Dykit', setProd16)
         fetchProductos('Impresora Creality Ender 3 V2', setProd17)
+        fetchProductos('Preventa Impresora Hellbot Magna SE FDM', setProd18)
 
     },[])
     
-    if(prod1.length===0||prod2.length===0||prod3.length===0||prod4.length===0||prod5.length===0||prod6.length===0||prod7.length===0||prod14.length===0||prod15.length===0||prod16.length===0||prod17.length===0||prod8.length===0 || prod9.length===0 || prod10.length===0 || prod11.length===0 ||prod12.length===0 ||prod13.length===0){
+    if(prod1.length===0||prod2.length===0||prod3.length===0||prod4.length===0||prod5.length===0||prod6.length===0||prod7.length===0||prod14.length===0||prod15.length===0||prod16.length===0||prod17.length===0||prod8.length===0 || prod9.length===0 || prod10.length===0 || prod11.length===0 ||prod12.length===0 ||prod13.length===0||prod14===0||prod15===0||prod16===0||prod17===0||prod18===0){
         return(
             <div className='Cargador'>
                 <Spinner animation='border' variant='info' size='lg' />
@@ -86,6 +88,11 @@ function Home() {
             <CarruEstandar ArrayProductos={box2} titulo='Lo más Vendido'/>
             <div className="separador"></div>
             <CarruEstandar ArrayProductos={box3} titulo='¡Para Principiantes y Emprendedores!'/>
+            <div className="separador"></div>
+            <div className="mapa">
+                <h4>Encontra nuestro local en el Paseo Libertad</h4>
+                <iframe className="mapaGogle" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9635.96273764556!2d-64.22182546080685!3d-31.363736886975694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943299162568deb9%3A0xb8860289c0db0681!2sPaseo%20LIBERTAD%20%E2%80%93%20Lugones%20%7C%20Grupo%20Casino!5e0!3m2!1ses!2sar!4v1645031361764!5m2!1ses!2sar" loading="lazy"></iframe>
+            </div>
             <div className="separador"></div>
         </>
     )

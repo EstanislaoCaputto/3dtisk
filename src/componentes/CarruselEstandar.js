@@ -14,11 +14,12 @@ export default function CarruEstandar(ArrayProductos, titulo){
     useEffect(()=>{
       let settings = {
         dots: true,
+        arrows: true,
         infinite: true,
-        speed: 15000,
+        speed: 1500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        initialSlide: 0,
+        initialSlide: 2,
         autoplay:true,
         autoplaySpeed:3000,
         cssEase:"linear",

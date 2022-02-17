@@ -1,8 +1,11 @@
 .carruEstandar{
-    width: 98%;
+    width: 95%;
     text-align: center;
     margin-bottom: 30px;
+    margin-left: 1.5rem;
+    margin-right: 0rem;
     align-content: center;
+
 }
 .slider{
     display: flex!important;
