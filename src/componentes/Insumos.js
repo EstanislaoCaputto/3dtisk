@@ -12,7 +12,6 @@ export default function Insumos(){
 
             })
             if (!response.ok) {
-                // oups! something went wrong
                 return;
             }
             const posts = await response.json();

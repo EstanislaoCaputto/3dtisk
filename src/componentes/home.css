@@ -21,3 +21,13 @@
     height: 98%;
     margin-left: 1.5rem;
 }
+
+@media screen and (max-width:400px) {
+    .mapa{
+        display: none;
+    }
+    .separador{
+        width: 50%;
+        margin: auto;
+    }
+}

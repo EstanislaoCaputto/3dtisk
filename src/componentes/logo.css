@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    width: 98%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 8px 2px;
+}
+.container-img{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border: 1px hidden black;
+    box-shadow: 2px 2px 5px 1px gray;
+}
+.img{
+    width: 150px;
+}
+
+@media screen and (max-width:400px) {
+    
+    .container-img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .img{
+        width: 50px;
+    }
+}

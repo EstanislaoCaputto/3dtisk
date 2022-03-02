@@ -5,31 +5,35 @@ import Item from "./Item";
 export default function Resina(){
     const [impresoras, setImpresoras] = useState([])
 
+    useEffect(() => {
+      const getImpresora = async () => {
+        let response = await fetch(
+          "https://3dtisk.com.ar/wp-json/wc/store/products?per_page=100",
+          {
+            per_page: 60,
+          }
+        );
+        if (!response.ok) {
+          // oups! something went wrong
+          return;
+        }
+        const posts = await response.json();
+        setImpresoras(posts);
+      };
+      getImpresora();
+    });
+    let resina = [];
     useEffect(()=>{
-        const getImpresora = async () => {
-            let response = await fetch('https://3dtisk.com.ar/wp-json/wc/store/products?per_page=100', {
-                per_page: 60
-
-            })
-            if (!response.ok) {
-                // oups! something went wrong
-                return;
+        impresoras.forEach((elem) => {
+            let categoria = elem.categories[1];
+            if (typeof categoria === "object") {
+              let res = categoria;
+              if (res.name.includes("(Resina)")) resina.push(elem);
             }
-            const posts = await response.json();
-            setImpresoras(posts)
-        }
-        getImpresora()
-    })
-    let resina = []
-    impresoras.forEach(elem =>{
-        let categoria = elem.categories[1]
-        if (typeof(categoria) === 'object'){
-            let res = categoria
-            if(res.name.includes('(Resina)')) resina.push(elem)
-        }
-        
-        
-    })
+          });
+          setImpresoras(resina);
+    },[])
+    
     
 
     

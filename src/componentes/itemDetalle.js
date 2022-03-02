@@ -4,13 +4,13 @@ import { Link } from "react-router-dom"
 import './itemDetalle.css'
 
 function ItemDetalle({producto}){
+    
     let precio = (parseInt(producto.prices.regular_price)/100).toLocaleString('en-US')
     let foto = producto.images[0].src
     let marca = producto.categories[0].name
     let especifTecn = producto.description.split('ESPECIFICACIONES TÉCNICAS')[1]
     let imagenes = []
     imagenes.push(producto.images[0].src,producto.images[0].thumbnail, producto.images[1].src, producto.images[2].src)
-    console.log(imagenes)
     useEffect(()=>{
         let div = document.getElementById('Descri')
         let descripcion = producto.description.split('ESPECIFICACIONES TÉCNICAS')[0]

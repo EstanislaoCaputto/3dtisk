@@ -11,7 +11,7 @@ export default function ItemList() {
     const {Pagina} = useParams()
     const [cargar, setCargar] = useState(true);
     const [productos, setProductos] = useState([]);
-    console.log(productos.length)
+    
 
     // useEffect(()=>{
     //     //-----------------woocommers------------------//

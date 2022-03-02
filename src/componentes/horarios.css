@@ -1,0 +1,20 @@
+.horarios{
+    display: flex;
+    width: 100%;
+    padding: .5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: blink;
+    font-size: 24px;
+    height: 450px;
+    background-position: center;
+    background-image: url('./img/3dtisk.jpg');
+}
+.letras{
+    width: 33%;
+    background-color: black;
+    color: white;
+    border-radius: .5rem;
+}
