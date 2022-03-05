@@ -1,7 +1,9 @@
 .separador{
-    display: flex;
-    margin:5px 2rem;
-    width: 95%;
+    display: block;
+    margin-top:1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    width: 90vw;
     height: 5px;
     background: linear-gradient(90deg, #E69419 0%, #E69419 100%);
     border-radius: 2px;
@@ -17,17 +19,17 @@
     
 }
 .mapaGogle{
-    width: 98%;
-    height: 98%;
-    margin-left: 1.5rem;
+    width: 90%;
+    height: 90%;
 }
 
-@media screen and (max-width:400px) {
-    .mapa{
-        display: none;
+@media (max-width:450px) {
+    .mapaGogle{
+        width: 80%;
+        height: 80%;
     }
     .separador{
-        width: 50%;
-        margin: auto;
+        width: 70vw;
+        margin: 5rem auto;
     }
 }

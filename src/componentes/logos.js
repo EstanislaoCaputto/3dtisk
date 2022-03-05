@@ -12,36 +12,36 @@ import './logo.css'
 
 export default function Logos(){
     return(
-        <div className="container">
+        <div className="contener">
             <div className='container-img'>
-                <img className="img fluid" src={logo3n3} alt="foto logo"></img>
+                <img className="img-fluid" src={logo3n3} alt="foto logo"></img>
             </div>
             <div className='container-img'>
-                <img className="img fluid" src={logoanet} alt="foto logo"></img>
+                <img className="img-fluid" src={logoanet} alt="foto logo"></img>
             </div>
             <div className='container-img'>
-                <img className="img fluid" src={logoartillery} alt="foto logo"></img>
+                <img className="img-fluid" src={logoartillery} alt="foto logo"></img>
             </div>
             <div className='container-img'>
-                <img className="img fluid" src={logobiqu} alt="foto logo"></img>
+                <img className="img-fluid" src={logobiqu} alt="foto logo"></img>
             </div>
             <div className='container-img'>
-                <img className="img fluid" src={logocreality} alt="foto logo"></img>
+                <img className="img-fluid" src={logocreality} alt="foto logo"></img>
             </div>
             <div className='container-img'>
-                <img className="img fluid" src={logogrilon} alt="foto logo"></img>
+                <img className="img-fluid" src={logogrilon} alt="foto logo"></img>
             </div>
             <div className='container-img'>
-                <img className="img fluid" src={logohellbot} alt="foto logo"></img>
+                <img className="img-fluid" src={logohellbot} alt="foto logo"></img>
             </div>
             <div className='container-img'>
-                <img className="img fluid" src={logoprintalot} alt="foto logo"></img>
+                <img className="img-fluid" src={logoprintalot} alt="foto logo"></img>
             </div>
             <div className='container-img'>
-                <img className="img fluid" src={logotronxy} alt="foto logo"></img>
+                <img className="img-fluid" src={logotronxy} alt="foto logo"></img>
             </div>
             <div className='container-img'>
-                <img className="img fluid" src={logowanhao} alt="foto logo"></img>
+                <img className="img-fluid" src={logowanhao} alt="foto logo"></img>
             </div>
         </div>
     )

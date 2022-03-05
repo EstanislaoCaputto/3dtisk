@@ -79,29 +79,37 @@ function Home() {
     let box1=[prod1,prod2,prod3,prod4,prod5,prod6]
     let box2=[prod7,prod8,prod9,prod10,prod11,prod12]
     let box3=[prod15,prod14,prod13,prod16,prod17]
-    return(
-        <>
-            <CarruselDeFotos/>
-            <div className="separador"></div>
-            <Pagos/>
-            <div className="separador"></div>
-            <CarruEstandar ArrayProductos={box1} titulo='Lo Último en el Mercado' /> 
-            <div className="separador"></div>
-            <CarruEstandar ArrayProductos={box2} titulo='Lo más Vendido'/>
-            <div className="separador"></div>
-            <CarruEstandar ArrayProductos={box3} titulo='¡Para Principiantes y Emprendedores!'/>
-            <div className="separador"></div>
-            <Logos />
-            <div className="separador"></div>
-            <div className="mapa">
-                <h4>Encontra nuestro local en el Paseo Libertad</h4>
-                <iframe title="mapaGoogle" className="mapaGogle" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9635.96273764556!2d-64.22182546080685!3d-31.363736886975694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943299162568deb9%3A0xb8860289c0db0681!2sPaseo%20LIBERTAD%20%E2%80%93%20Lugones%20%7C%20Grupo%20Casino!5e0!3m2!1ses!2sar!4v1645031361764!5m2!1ses!2sar" loading="lazy"></iframe>
-            </div>
-            <div className="separador"></div>
-            <Horarios horasLocal={'10am a 9pm'} horasOficina={'9am a 6pm'} diasLocal={'Lunes a Domingo'} diasOficina={'Lunes a Viernes'} />
-            <div className="separador"></div>
-        </>
-    )
+    return (
+      <>
+        <CarruselDeFotos />
+        <div className="separador"></div>
+        <Pagos />
+        <div className="separador"></div>
+        <CarruEstandar ArrayProductos={box1} titulo="Lo Último en el Mercado" />
+        <div className="separador"></div>
+        <CarruEstandar ArrayProductos={box2} titulo="Lo más Vendido" />
+        <div className="separador"></div>
+        <CarruEstandar
+          ArrayProductos={box3}
+          titulo="¡Para Principiantes y Emprendedores!"
+        />
+        <div className="separador"></div>
+        <Logos />
+        <div className="separador"></div>
+        <div className="mapa">
+          <h4>Encontra nuestro local en el Paseo Libertad</h4>
+          <iframe
+            title="mapaGoogle"
+            className="mapaGogle"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9635.96273764556!2d-64.22182546080685!3d-31.363736886975694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943299162568deb9%3A0xb8860289c0db0681!2sPaseo%20LIBERTAD%20%E2%80%93%20Lugones%20%7C%20Grupo%20Casino!5e0!3m2!1ses!2sar!4v1645031361764!5m2!1ses!2sar"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div className="separador"></div>
+        <Horarios />
+        <div className="separador"></div>
+      </>
+    );
 }
 
 export default Home;
