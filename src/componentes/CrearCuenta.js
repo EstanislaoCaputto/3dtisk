@@ -10,8 +10,8 @@ function CrearCuenta() {
     const[usuario, setUsuario] = useState({})
     
     const CrearCuenta = () => {
-        let listo = AgregarUsuario(usuario);
-        console.log('Usuario Registrado', user);
+        AgregarUsuario(usuario);
+        console.log('Usuario Registrado');
 
     }
 
@@ -29,7 +29,7 @@ function CrearCuenta() {
                 setUsuario({
                     nombre: nombre.value,
                     mail: mail.value,
-                    pass:contraseña.value
+                    pass:contraseña.value                    
                 })
     
             })

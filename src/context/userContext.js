@@ -6,10 +6,26 @@ export const UserProvider = ({children}) => {
     const [mail, setMail] = useState("");
     const [contraseña, setContraseña] = useState("")
 
-    const AgregarUsuario = (user, mail, contraseña) =>{
+    let params = {
+      username: user,
+      email: mail,
+      password: contraseña,
+      is_super_admin: false,
+      roles: "cliente"
+    };
+    let opcions = {
+        method:"POST",
+        body:JSON.stringify(params),
+        cors:'no-cors'
+    }
+
+    const AgregarUsuario = async(user, mail, contraseña) =>{
         setUser(user);
         setContraseña(contraseña)
         setMail(mail);
+        await fetch('https://3dtisk.com.ar/wp/v2/users', opcions)
+            .then(console.log('exito'))
+            .catch(err=>console.log('error',err))
     }
     const CerrarSesion = () => {
         setUser();
