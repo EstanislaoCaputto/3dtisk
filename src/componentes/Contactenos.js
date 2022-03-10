@@ -9,18 +9,18 @@ function Contactar() {
             <h1 className='titu'>CONTACTANOS</h1>
             <div className='contenedor-may'>
                 <form className='contenedor'>
-                    <fieldset className='contenedor'>
+                    <fieldset className='contenedor-input'>
                         <label>Ingrese su Mail</label>
                         <input type='text' className='campo-text'></input>
                         <label>Ingrese su Nombre</label>
                         <input type='text' className='campo-text'></input>
                     </fieldset>
-                    <fieldset className='contenedor'>
+                    <fieldset className='contenedor-input'>
                         <label>Dejanos tu mensaje!!</label>
                         <textarea name='mensaje' className='campo-text'></textarea>
                     </fieldset>
                     
-                    <input type='submit'></input>
+                    <input type='submit' className='btn btn-primary'></input>
                     
                 </form>
             </div>

@@ -12,11 +12,6 @@ function NavBar() {
             <Navbar collapseOnSelect expand="lg" className='barraNavegacion'>
                 <div className='miContainer'>
                     <Navbar.Brand href="/">Inicio</Navbar.Brand>
-                    <Navbar.Brand href="/">
-                        <a className='img-avatar'>
-                            <p>1</p>
-                        </a>
-                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav>
@@ -28,6 +23,7 @@ function NavBar() {
                             </NavDropdown>
                             <Nav.Link href="/servicioTecnico">Soporte Técnico</Nav.Link>
                             <Nav.Link href="/contactenos">Contáctenos</Nav.Link>
+                            <Nav.Link href="/crearCuenta">Crear Cuenta</Nav.Link>
                             <Nav.Link href="/carrito" disabled={true} >Mi Carrito</Nav.Link>
                             <Nav.Link href="#pricing">Carrito</Nav.Link>
 
