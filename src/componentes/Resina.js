@@ -8,10 +8,7 @@ export default function Resina(){
     useEffect(() => {
       const getImpresora = async () => {
         let response = await fetch(
-          "https://3dtisk.com.ar/wp-json/wc/store/products?per_page=100",
-          {
-            per_page: 60,
-          }
+          "https://3dtisk.com.ar/wp-json/wc/store/products?per_page=100&page=1&search=Resina"
         );
         if (!response.ok) {
           // oups! something went wrong
@@ -21,23 +18,21 @@ export default function Resina(){
         setImpresoras(posts);
       };
       getImpresora();
-    });
+    },[]);
+    
     let resina = [];
     useEffect(()=>{
         impresoras.forEach((elem) => {
-            let categoria = elem.categories[1];
-            if (typeof categoria === "object") {
-              let res = categoria;
-              if (res.name.includes("(Resina)")) resina.push(elem);
-            }
+          if(elem.name.includes('Resina')) resina.push(elem)
           });
           setImpresoras(resina);
+          
     },[])
-    
-    
+    console.log(impresoras);
+
 
     
-    if (resina.length === 0){
+    if (impresoras.length === 0){
         return (
             <>
                 <div className='Cargador'>
@@ -49,7 +44,7 @@ export default function Resina(){
     }
     return(
         <div className="lista">
-            {resina.map((impresora)=>(
+            {impresoras.map((impresora)=>(
                 <Item key={impresora.id} {...impresora} />
             ))}
         </div>

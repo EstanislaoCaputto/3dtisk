@@ -7,7 +7,7 @@ export default function Fdm(){
 
     useEffect(()=>{
         const getImpresora = async () => {
-            let response = await fetch('https://3dtisk.com.ar/wp-json/wc/store/products?per_page=100', {
+            let response = await fetch('https://3dtisk.com.ar/wp-json/wc/store/products?per_page=100&search=Impresora', {
                 per_page: 60
 
             })

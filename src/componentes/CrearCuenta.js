@@ -11,7 +11,6 @@ function CrearCuenta() {
     
     const CrearCuenta = () => {
         AgregarUsuario(usuario);
-        console.log('Usuario Registrado', usuario);
 
     }
 

@@ -1,0 +1,15 @@
+.Contenedor-Usuario{
+    display: flex;
+    width: 100vw;
+    height: 600px;
+    background-color: green;
+    justify-content: space-around;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px black solid;
+}

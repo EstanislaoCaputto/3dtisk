@@ -18,7 +18,7 @@ export default function Item({name, categories, images, prices, id, permalink}) 
                 </div>
 
                 <div className="container-info card-body">
-                    <h2>{name.split('Impresora' || 'Impresora 3d')}</h2>
+                    <h2>{name}</h2>
                     <p>{categoria}</p>
                     <p className="precio"> ${pre.toLocaleString()}</p>
                     <div className="card-footer">
