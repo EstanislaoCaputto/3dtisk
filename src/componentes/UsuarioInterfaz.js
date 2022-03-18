@@ -5,7 +5,7 @@ import './usuarioInterfaz.css'
 
 
 export default function UsuarioInterfaz (){
-    const {user} = useContext(UserContex)
+    const {user, imagUser} = useContext(UserContex)
     
     if(Object.entries(user).length === 0){
           
@@ -16,13 +16,14 @@ export default function UsuarioInterfaz (){
         return(
             <div className="Contenedor-Usuario">
                 <div className="datos">
-                    <h3>Nombre: <br/> {user.Nombre}</h3>
-                    <h3>Apellido</h3>
-                    <h5>Email</h5>
-                    <h5>Numero</h5>
+                    <h3>Nombre: {user.Nombre}</h3>
+                    <h3>Apellido:  {user.Apellido}</h3>
+                    <h5>Email:  {user.Mail}</h5>
+                    <h5>Numero: {user.Telefono}</h5>
                 </div>
                 <div className="foto">
-                    imagen
+                    <img src={imagUser} alt='avatar' />
+                    <button className='btn btn-primary'>Cerrar Sesion</button>
                 </div>
     
             </div>

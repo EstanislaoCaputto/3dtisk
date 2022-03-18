@@ -15,7 +15,6 @@ export default function InicioSesion() {
           Contraseña: contra.value,
         };
         IniciarSesion(usuario);
-        console.log(usuario);
       });
     });
     return(
